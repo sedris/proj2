@@ -2,6 +2,13 @@ SedrisProj2::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
+  get "logout" => "sessions#destroy", :as => "logout"
+  get "login" => "sessions#new", :as => "login"
+  get "signup" => "users#new", :as => "signup"
+
+  resources :users
+  resources :sessions
+
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
@@ -48,7 +55,7 @@ SedrisProj2::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'users#new'
 
   # See how all your routes lay out with "rake routes"
 
