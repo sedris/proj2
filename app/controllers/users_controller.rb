@@ -3,6 +3,17 @@ class UsersController < ApplicationController
 		@user = User.new
 	end
 
+	# GET /users
+	# GET /users.json
+	def index
+		@users = User.all
+
+		respond_to do |format|
+		  format.html # index.html.erb
+		  format.json { render json: @users }
+		end
+	end
+
 	def create
 		# 1 for checked -> create shopkeeper
 		# 0 for unchecked -> create shopper
