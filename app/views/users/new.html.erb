@@ -23,5 +23,9 @@
     <%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation %>
   </div>
+  <div class="field">
+    <%= f.label "Are you a shopkeeper?" %>
+    <%= f.check_box :isShopkeeper %>
+  </div>
   <div class="actions"><%= f.submit %></div>
 <% end %>

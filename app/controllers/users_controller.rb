@@ -4,7 +4,15 @@ class UsersController < ApplicationController
 	end
 
 	def create
-		@user = User.new(params[:user])
+		# 1 for checked -> create shopkeeper
+		# 0 for unchecked -> create shopper
+		if (params[:user]["isShopkeeper"] == "1")
+			params[:user]["isShopkeeper"] = true
+			@user = User.new(params[:user])
+		else
+			params[:user]["isShopkeeper"] = false
+			@user = User.new(params[:user])
+		end
 		if @user.save
 			# set the session for the newly created user
 			# user will be "logged in"
