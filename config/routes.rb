@@ -8,8 +8,16 @@ SedrisProj2::Application.routes.draw do
 
   resources :users
   resources :sessions
-  resources :shoppers
-  resources :shopkeepers
+  resources :items
+  
+  resources :shoppers do
+    resources :cart
+    resources :orders
+  end
+  resources :shopkeepers do
+    resources :items
+    resources :orders
+  end
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

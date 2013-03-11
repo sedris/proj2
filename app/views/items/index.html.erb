@@ -1,0 +1,24 @@
+<h1>Listing <%= @shopkeeper.email %>'s Items</h1>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Quantity</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @items.each do |item| %>
+  <tr>
+    <td><%= item.name %></td>
+    <td>$<%= item.price %></td>
+    <td><%= item.quantity %></td>
+    <td><%= link_to 'Show', item %></td>
+    <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New item', new_item_path %>
