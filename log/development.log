@@ -32308,3 +32308,305 @@ Served asset /users.js - 304 Not Modified (2ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-12 11:12:51 -0400
 Served asset /application.js - 304 Not Modified (2ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130307023526)
+Migrating to AddTypeColumnToUsers (20130308024608)
+Migrating to CreateCarts (20130310231446)
+Migrating to CreateOrders (20130310231631)
+Migrating to CreateItems (20130311004626)
+Migrating to CartsItems (20130311005153)
+Migrating to OrdersItems (20130311005519)
+Migrating to AddShopkeeperIdToItems (20130311011713)
+Migrating to RenameTables (20130311013116)
+Migrating to ChangeOrderShopkeeperRelationship (20130312050835)
+Migrating to ChangeEmailToUsernameInUsers (20130312151453)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TEMPORARY TABLE "altered_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "password_digest" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "type" varchar(255)) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "users"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_users" ("id","username","password_digest","created_at","updated_at","type") VALUES (30, 'sarah', '$2a$10$qCAjgPyadLId7TSYqcqf1.gsK4.7tNwTJxK4qOJpuRzHzr9U/P3Wq', '2013-03-12 13:26:59.311091', '2013-03-12 13:26:59.311091', 'Shopper')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_users" ("id","username","password_digest","created_at","updated_at","type") VALUES (31, 'dave', '$2a$10$NTJJoJAOvevaQJVsTQrXIOIZCJSubXAQuy5BY1ZDHacRf2kUWFw5W', '2013-03-12 13:27:14.085936', '2013-03-12 13:27:14.085936', 'Shopkeeper')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_users" ("id","username","password_digest","created_at","updated_at","type") VALUES (32, 'dan', '$2a$10$tIAoMn/aikYhYsnn2hB2DumjY24AVcdB3t0Xbm0mbV2oCloKMp3qi', '2013-03-12 13:28:09.694117', '2013-03-12 13:28:09.694117', 'Shopkeeper')
+  [1m[36m (3.0ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.0ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "password_digest" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "type" varchar(255)) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "altered_users"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "users" ("id","username","password_digest","created_at","updated_at","type") VALUES (30, 'sarah', '$2a$10$qCAjgPyadLId7TSYqcqf1.gsK4.7tNwTJxK4qOJpuRzHzr9U/P3Wq', '2013-03-12 13:26:59.311091', '2013-03-12 13:26:59.311091', 'Shopper')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "users" ("id","username","password_digest","created_at","updated_at","type") VALUES (31, 'dave', '$2a$10$NTJJoJAOvevaQJVsTQrXIOIZCJSubXAQuy5BY1ZDHacRf2kUWFw5W', '2013-03-12 13:27:14.085936', '2013-03-12 13:27:14.085936', 'Shopkeeper')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "users" ("id","username","password_digest","created_at","updated_at","type") VALUES (32, 'dan', '$2a$10$tIAoMn/aikYhYsnn2hB2DumjY24AVcdB3t0Xbm0mbV2oCloKMp3qi', '2013-03-12 13:28:09.694117', '2013-03-12 13:28:09.694117', 'Shopkeeper')
+  [1m[36m (2.0ms)[0m  [1mDROP TABLE "altered_users"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130312151453')
+  [1m[36m (185.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-12 11:18:45 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (10.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 31]]
+Completed 200 OK in 170ms (Views: 40.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-12 11:18:45 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-12 11:18:45 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-12 11:18:45 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-12 11:18:45 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-12 11:18:45 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-12 11:18:45 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-12 11:18:46 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-12 11:18:46 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2013-03-12 11:18:57 -0400
+Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (1.0ms)[0m  SELECT "orders".* FROM "orders" 
+  [1m[36mShopkeeper Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."type" IN ('Shopkeeper') AND "users"."id" = 31 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "orders".* FROM "orders" 
+  [1m[36mShopkeeper Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "users" INNER JOIN "orders_shopkeepers" ON "users"."id" = "orders_shopkeepers"."shopkeeper_id" WHERE "users"."type" IN ('Shopkeeper') AND "orders_shopkeepers"."order_id" = 32 AND "users"."id" = 31 LIMIT 1[0m
+  [1m[35mShopkeeper Exists (0.0ms)[0m  SELECT 1 AS one FROM "users" INNER JOIN "orders_shopkeepers" ON "users"."id" = "orders_shopkeepers"."shopkeeper_id" WHERE "users"."type" IN ('Shopkeeper') AND "orders_shopkeepers"."order_id" = 33 AND "users"."id" = 31 LIMIT 1
+  [1m[36mCart Load (0.0ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = 40 LIMIT 1[0m
+  [1m[35mShopper Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."type" IN ('Shopper', 'Shopkeeper') AND "users"."id" = 32 LIMIT 1
+  [1m[36mShopkeeper Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "orders_shopkeepers" ON "users"."id" = "orders_shopkeepers"."shopkeeper_id" WHERE "users"."type" IN ('Shopkeeper') AND "orders_shopkeepers"."order_id" = 32[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 40 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."type" IN ('Shopper', 'Shopkeeper') AND "users"."id" = 32 LIMIT 1[0m
+  [1m[35mShopkeeper Load (0.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "orders_shopkeepers" ON "users"."id" = "orders_shopkeepers"."shopkeeper_id" WHERE "users"."type" IN ('Shopkeeper') AND "orders_shopkeepers"."order_id" = 33
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."id" = 40 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."type" IN ('Shopper', 'Shopkeeper') AND "users"."id" = 32 LIMIT 1
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "items_orders" ON "items"."id" = "items_orders"."item_id" WHERE "items_orders"."order_id" = 32[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 40 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."type" IN ('Shopper', 'Shopkeeper') AND "users"."id" = 32 LIMIT 1[0m
+  [1m[35mItem Load (1.0ms)[0m  SELECT "items".* FROM "items" INNER JOIN "items_orders" ON "items"."id" = "items_orders"."item_id" WHERE "items_orders"."order_id" = 33
+  Rendered orders/index.html.erb within layouts/application (102.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 31]]
+Completed 200 OK in 154ms (Views: 118.0ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-12 11:18:58 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-12 11:18:58 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-12 11:18:58 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-12 11:18:58 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-12 11:18:58 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-12 11:18:58 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-12 11:18:58 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-12 11:18:58 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 11:19:05 -0400
+Processing by CartsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 31]]
+  [1m[36mCart Load (1.0ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."shopper_id" = 31 LIMIT 1[0m
+  [1m[35mItem Load (1.0ms)[0m  SELECT "items".* FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 44
+  Rendered carts/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 45ms (Views: 33.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-12 11:19:05 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-12 11:19:05 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-12 11:19:05 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-12 11:19:05 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-12 11:19:05 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-12 11:19:05 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-12 11:19:05 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-12 11:19:06 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-12 11:19:11 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 31]]
+Completed 200 OK in 36ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-12 11:19:12 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-12 11:19:12 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-12 11:19:12 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-12 11:19:12 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-12 11:19:12 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-12 11:19:12 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-12 11:19:12 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-12 11:19:12 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/shoppers/new" for 127.0.0.1 at 2013-03-12 11:19:15 -0400
+Processing by ShoppersController#new as HTML
+  Rendered shoppers/new.html.erb within layouts/application (10.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 31]]
+Completed 200 OK in 42ms (Views: 38.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-12 11:19:16 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-12 11:19:16 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-12 11:19:16 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-12 11:19:16 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-12 11:19:16 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-12 11:19:16 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-12 11:19:16 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-12 11:19:16 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started POST "/shoppers" for 127.0.0.1 at 2013-03-12 11:19:23 -0400
+Processing by ShoppersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+YOqbRMV36Eoohma8krZUVr/0B2JMugPFMpapMe+2ys=", "shopper"=>{"username"=>"anne", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Shopper"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."username" = 'anne' LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (18.0ms)[0m  INSERT INTO "users" ("created_at", "password_digest", "type", "updated_at", "username") VALUES (?, ?, ?, ?, ?)  [["created_at", Tue, 12 Mar 2013 15:19:24 UTC +00:00], ["password_digest", "$2a$10$NElo8NZXrdzP3MpcecFZEuMr7FnpK6qXDWBXezj9tO/i1iPOfdvGS"], ["type", "Shopper"], ["updated_at", Tue, 12 Mar 2013 15:19:24 UTC +00:00], ["username", "anne"]]
+  [1m[36mSQL (5.0ms)[0m  [1mINSERT INTO "carts" ("created_at", "shopper_id", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Tue, 12 Mar 2013 15:19:24 UTC +00:00], ["shopper_id", nil], ["updated_at", Tue, 12 Mar 2013 15:19:24 UTC +00:00]]
+  [1m[35mCart Load (7.0ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."shopper_id" = 33 LIMIT 1
+  [1m[36m (2.0ms)[0m  [1mUPDATE "carts" SET "shopper_id" = 33, "updated_at" = '2013-03-12 15:19:24.159946' WHERE "carts"."id" = 49[0m
+  [1m[35m (125.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 399ms (ActiveRecord: 158.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-12 11:19:24 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (9.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 33]]
+Completed 200 OK in 37ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-12 11:19:24 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-12 11:19:24 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-12 11:19:24 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-12 11:19:24 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-12 11:19:24 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-12 11:19:24 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-12 11:19:25 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-12 11:19:25 -0400
+Served asset /application.js - 304 Not Modified (2ms)

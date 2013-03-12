@@ -2,7 +2,7 @@ class CartsController < ApplicationController
   # GET /carts
   # GET /carts.json
   def index
-    flash.now.alert = current_user.email
+    flash.now.alert = current_user.username
     @cart = current_user.cart
     @items = current_user.cart.items
 

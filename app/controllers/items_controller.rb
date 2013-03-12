@@ -2,7 +2,7 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
-    flash.now.alert = current_user.email
+    flash.now.alert = current_user.username
     # if this is the current user's shop, allow for editing
     if params.has_key?(:shopkeeper_id)
       @shopkeeper = Shopkeeper.find_by_id(params[:shopkeeper_id])

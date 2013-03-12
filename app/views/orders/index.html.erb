@@ -12,14 +12,14 @@
   <tr>
     <td><%= order.id %></td>
     <td><%= order.cart.id %></td>
-    <td><%= order.cart.shopper.email %></td>
-    <td><% order.shopkeepers.each do |shopkeeper|%><%=shopkeeper.email + " " %><%end%></td>
+    <td><%= order.cart.shopper.username %></td>
+    <td><% order.shopkeepers.each do |shopkeeper|%><%=shopkeeper.username + " " %><%end%></td>
     <td></td>
   </tr>
 <% end %>
 </table>
 
-<h1>Listing All Orders for <%=@shopkeeper.email%></h1>
+<h1>Listing All Orders for <%=@shopkeeper.username%></h1>
 <table>
   <tr>
     <th>Order ID</th>
@@ -31,7 +31,7 @@
 <% @shopkeeper_orders.each do |order| %>
   <tr>
     <td><%= order.id %></td>
-    <td><%= order.cart.shopper.email %></td>
+    <td><%= order.cart.shopper.username %></td>
     <td><% order.items.each do |item|%><%=item.name + " " %><%end%></td>
     <td></td>
   </tr>
