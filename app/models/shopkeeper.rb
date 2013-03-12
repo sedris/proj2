@@ -1,3 +1,3 @@
 class Shopkeeper < Shopper 
-	has_many :items
+	has_many :items, :dependent => :destroy
 end

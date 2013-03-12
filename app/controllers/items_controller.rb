@@ -2,18 +2,23 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
-    flash.now.alert = params
+    flash.now.alert = current_user.email
     # if this is the current user's shop, allow for editing
     if params.has_key?(:shopkeeper_id)
-      @shopkeeper = User.find(params[:shopkeeper_id])
+      @shopkeeper = Shopkeeper.find_by_id(params[:shopkeeper_id])
     else
-      @shopkeeper = User.find(session[:user_id])
+      @shopkeeper = Shopkeeper.find_by_id(session[:user_id])
     end
-    if !@shopkeeper.is_a? Shopkeeper
-      @items = []
+
+    # if no shopkeeper was found
+    if !@shopkeeper
+      #redirect_to root_url :notice => "shopkeeper not found" and return
+      @shopkeeper = Shopkeeper.all.last
+      @items = @shopkeeper.items
     else
       @items = @shopkeeper.items
     end
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @items }
@@ -92,5 +97,13 @@ class ItemsController < ApplicationController
       format.html { redirect_to items_url }
       format.json { head :no_content }
     end
+  end
+
+  def add_to_cart
+    if !current_user.cart
+      current_user.cart = Cart.create()
+    end
+    current_user.cart.items.push(Item.find(params[:item]))
+    redirect_to items_path(shopkeeper_id: params[:shopkeeper_id])
   end
 end

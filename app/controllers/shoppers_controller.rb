@@ -14,4 +14,16 @@ class ShoppersController < ApplicationController
 			render "new"
 		end
 	end
+
+  # DELETE /shoppers/1
+  # DELETE /shoppers/1.json
+  def destroy
+    @user = Shopper.find(params[:id])
+    @user.destroy
+
+    respond_to do |format|
+      format.html { redirect_to root_url}
+      format.json { head :no_content }
+    end
+  end
 end

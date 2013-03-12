@@ -6,6 +6,7 @@
     <th>Quantity</th>
     <th></th>
     <th></th>
+    <th></th>
   </tr>
 
 <% @items.each do |item| %>
@@ -15,6 +16,7 @@
     <td><%= item.quantity %></td>
     <td><%= link_to 'Show', item %></td>
     <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%=button_to "add to cart", add_to_cart_path(item: item.id, shopkeeper_id: @shopkeeper.id)%></td>
   </tr>
 <% end %>
 </table>
