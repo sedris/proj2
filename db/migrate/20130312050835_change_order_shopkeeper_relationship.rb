@@ -5,11 +5,11 @@ class ChangeOrderShopkeeperRelationship < ActiveRecord::Migration
     	t.column :order_id, :integer
 		end
 
-		rename_column :orders, :shopper_id, :cart_id
+		rename_column :orders, :user_id, :cart_id
   end
 
   def down
   	drop_table 'orders_shopkeepers'
-  	rename_column :orders, :cart_id, :shopper_id
+  	rename_column :orders, :cart_id, :user_id
   end
 end
