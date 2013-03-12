@@ -4,7 +4,7 @@
   <% if @user.errors.any? %>
     <div class="error_messages">
       <h2>Form is invalid</h2>
-      <ul>
+      <ul class="text-error">
         <% for message in @user.errors.full_messages %>
           <li><%= message %></li>
         <% end %>
@@ -23,5 +23,5 @@
     <%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation %>
   </div>
-  <div class="actions"><%= f.submit %></div>
+  <div class="actions"><%= f.submit "Create", :class => "btn btn-large btn-primary"%></div>
 <% end %>
