@@ -2,7 +2,9 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
-    flash.now.alert = current_user.username
+    if !current_user
+      redirect_to signup_path, :notice => "Must be logged in to view" and return
+    end
     # if this is the current user's shop, allow for editing
     if params.has_key?(:shopkeeper_id)
       @shopkeeper = Shopkeeper.find_by_id(params[:shopkeeper_id])
@@ -29,7 +31,9 @@ class ItemsController < ApplicationController
   # GET /items/1.json
   # Shows information for this item
   def show
-    flash.now.alert = params
+    if !current_user
+      redirect_to signup_path, :notice => "Must be logged in to view" and return
+    end
     @item = Item.find(params[:id])
 
     respond_to do |format|
@@ -41,6 +45,9 @@ class ItemsController < ApplicationController
   # GET /items/new
   # GET /items/new.json
   def new
+    if !current_user
+      redirect_to signup_path, :notice => "Must be logged in to view" and return
+    end
     @item = User.find(session[:user_id]).items.new
 
     respond_to do |format|
@@ -51,13 +58,18 @@ class ItemsController < ApplicationController
 
   # GET /items/1/edit
   def edit
+    if !current_user
+      redirect_to signup_path, :notice => "Must be logged in to view" and return
+    end
     @item = Item.find(params[:id])
   end
 
   # POST /items
   # POST /items.json
   def create
-    flash.now.alert = params
+    if !current_user
+      redirect_to signup_path, :notice => "Must be logged in to view" and return
+    end
     @item = User.find(session[:user_id]).items.new(params[:item])
 
     respond_to do |format|
@@ -74,6 +86,9 @@ class ItemsController < ApplicationController
   # PUT /items/1
   # PUT /items/1.json
   def update
+    if !current_user
+      redirect_to signup_path, :notice => "Must be logged in to view" and return
+    end
     @item = Item.find(params[:id])
 
     respond_to do |format|
@@ -90,6 +105,9 @@ class ItemsController < ApplicationController
   # DELETE /items/1
   # DELETE /items/1.json
   def destroy
+    if !current_user
+      redirect_to signup_path, :notice => "Must be logged in to view" and return
+    end
     @item = Item.find(params[:id])
     @item.destroy
 
@@ -100,6 +118,10 @@ class ItemsController < ApplicationController
   end
 
   def add_to_cart
+    if !current_user
+      redirect_to signup_path, :notice => "Must be logged in to view" and return
+    end
+    
     if !current_user.cart
       current_user.cart = Cart.create()
     end

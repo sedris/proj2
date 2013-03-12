@@ -36129,3 +36129,2691 @@ Served asset /bootstrap.min.css - 304 Not Modified (0ms)
 
 Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 15:39:13 -0400
 Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-03-12 15:50:34 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb (2.0ms)
+Completed 200 OK in 12ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-03-12 15:51:08 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb (2.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 15:51:31 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb (3.0ms)
+Completed 200 OK in 68ms (Views: 10.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-03-12 15:52:40 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 15:52:40 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 15:52:40 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-03-12 15:52:56 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 15:52:57 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 15:52:57 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-03-12 15:53:01 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 15:53:01 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb (1.0ms)
+Completed 200 OK in 28ms (Views: 9.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 15:53:19 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (2.0ms)
+Completed 200 OK in 37ms (Views: 19.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 15:53:19 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 15:53:19 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 15:53:56 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (1.0ms)
+Completed 200 OK in 29ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 15:53:56 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 15:53:56 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/shoppers/new" for 127.0.0.1 at 2013-03-12 15:54:00 -0400
+Processing by ShoppersController#new as HTML
+  Rendered shoppers/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 46ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 15:54:01 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 15:54:01 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 15:57:31 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (1.0ms)
+Compiled bootstrap.js  (53ms)  (pid 2228)
+Compiled application.js  (1005ms)  (pid 2228)
+Completed 200 OK in 3141ms (Views: 3140.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 15:57:34 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-12 15:57:34 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 15:57:34 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-12 15:57:35 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-03-12 15:57:35 -0400
+Served asset /bootstrap.js - 200 OK (5ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-12 15:57:35 -0400
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-12 15:57:35 -0400
+Served asset /application.js - 304 Not Modified (71ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-12 15:57:35 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 15:57:35 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 16:00:52 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (1.0ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:00:53 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 16:00:53 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-03-12 16:00:53 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-03-12 16:00:53 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2013-03-12 16:00:53 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-03-12 16:00:53 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-03-12 16:00:53 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 16:01:51 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (1.0ms)
+Compiled bootstrap-responsive.css  (24ms)  (pid 2228)
+Compiled bootstrap-responsive.min.css  (2ms)  (pid 2228)
+Compiled bootstrap.css  (61ms)  (pid 2228)
+Compiled application.css  (800ms)  (pid 2228)
+Completed 200 OK in 1469ms (Views: 1468.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-12 16:01:54 -0400
+Served asset /application.css - 200 OK (63ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-12 16:01:54 -0400
+Served asset /bootstrap-responsive.css - 200 OK (63ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-12 16:01:54 -0400
+Served asset /bootstrap.css - 200 OK (6ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:01:54 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:01:54 -0400
+Served asset /bootstrap-responsive.min.css - 200 OK (5ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-12 16:01:54 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-12 16:01:54 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 16:01:54 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 16:02:15 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (2.0ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:02:15 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-12 16:02:15 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-12 16:02:15 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-12 16:02:15 -0400
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:02:15 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-12 16:02:15 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-12 16:02:15 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 16:02:16 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 16:02:44 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (2.0ms)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:02:44 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-12 16:02:44 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-12 16:02:44 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-12 16:02:44 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-12 16:02:44 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:02:44 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-12 16:02:45 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 16:02:45 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 16:02:59 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (1.0ms)
+Completed 200 OK in 48ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-12 16:02:59 -0400
+Served asset /application.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-12 16:03:00 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-12 16:03:00 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:03:00 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:03:00 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-12 16:03:00 -0400
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-12 16:03:00 -0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 16:03:00 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 16:04:01 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (2.0ms)
+Compiled application.css  (11ms)  (pid 2228)
+Completed 200 OK in 746ms (Views: 741.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-12 16:04:02 -0400
+Served asset /application.css - 200 OK (207ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:04:02 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-12 16:04:02 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:04:02 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-12 16:04:02 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-12 16:04:03 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-12 16:04:03 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 16:04:03 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 16:06:00 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (2.0ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-12 16:06:00 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:06:00 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-12 16:06:00 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:06:00 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-12 16:06:00 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-12 16:06:01 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-12 16:06:01 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 16:06:01 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 16:08:17 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (1.0ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-12 16:08:18 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:08:18 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-12 16:08:18 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:08:18 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-12 16:08:18 -0400
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-12 16:08:18 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 16:08:19 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-12 16:08:19 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 16:10:59 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (1.0ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:00 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:00 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:00 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:00 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:00 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:00 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:00 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 16:11:00 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 16:11:12 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (1.0ms)
+Completed 200 OK in 99ms (Views: 98.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:12 -0400
+Served asset /application.css - 304 Not Modified (44ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:12 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:12 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:12 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:12 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:12 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:13 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 16:11:13 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 16:11:19 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (1.0ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:19 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:19 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:19 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:19 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:19 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:19 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:20 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 16:11:20 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 16:11:36 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (4.0ms)
+Completed 200 OK in 35ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:36 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:37 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:37 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:37 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:37 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:37 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:37 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 16:11:37 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-03-12 16:11:52 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 141ms (Views: 139.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 16:11:53 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 16:11:53 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 18:40:34 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (2.0ms)
+Completed 200 OK in 234ms (Views: 234.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 18:40:35 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-12 18:40:35 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-12 18:40:36 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-12 18:40:36 -0400
+Served asset /bootstrap.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-12 18:40:36 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-12 18:40:36 -0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-12 18:40:36 -0400
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 18:40:52 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (1.0ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-12 18:40:54 -0400
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-12 18:40:54 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 18:40:54 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-12 18:40:54 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-12 18:40:54 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-12 18:40:54 -0400
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-12 18:40:54 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 18:40:55 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 18:41:41 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (1.0ms)
+Compiled bootstrap.css  (2ms)  (pid 2228)
+Compiled application.css  (7ms)  (pid 2228)
+Completed 200 OK in 880ms (Views: 879.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2013-03-12 18:41:48 -0400
+Served asset /bootstrap-responsive.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2013-03-12 18:41:48 -0400
+Served asset /bootstrap.css - 200 OK (43ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2013-03-12 18:41:48 -0400
+Served asset /bootstrap-responsive.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 18:41:48 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-03-12 18:41:48 -0400
+Served asset /application.css - 304 Not Modified (26ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2013-03-12 18:41:48 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-03-12 18:41:48 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 18:41:48 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 18:43:04 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (2.0ms)
+Compiled signup.css  (1ms)  (pid 2228)
+Completed 200 OK in 249ms (Views: 247.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 18:43:04 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 18:43:04 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/signup.css?body=1" for 127.0.0.1 at 2013-03-12 18:43:04 -0400
+Served asset /signup.css - 200 OK (7ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 18:43:52 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (2.0ms)
+Compiled signup.css  (1ms)  (pid 2228)
+Completed 200 OK in 220ms (Views: 218.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/signup.css?body=1" for 127.0.0.1 at 2013-03-12 18:43:53 -0400
+Served asset /signup.css - 200 OK (172ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 18:43:53 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 18:43:53 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-03-12 18:44:00 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 24ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 18:44:00 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 18:44:00 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-12 18:44:11 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (115.0ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36mEXPLAIN (1.0ms)[0m  [1mEXPLAIN QUERY PLAN SELECT "users".* FROM "users" [0m
+EXPLAIN for: SELECT "users".* FROM "users" 
+0|0|0|SCAN TABLE users (~1000000 rows)
+
+  Rendered users/index.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 923ms (Views: 60.0ms | ActiveRecord: 116.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 18:44:16 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 18:44:17 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 18:45:35 -0400
+
+SyntaxError (C:/Users/Sarah/Documents/2012-2013/6.170/sedris_proj2/app/controllers/application_controller.rb:12: syntax error, unexpected $end, expecting keyword_end):
+  app/controllers/carts_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (20.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (139.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 18:45:46 -0400
+Processing by CartsController#index as HTML
+Completed 500 Internal Server Error in 117ms
+
+NameError (undefined local variable or method `root' for #<CartsController:0x369f780>):
+  app/controllers/application_controller.rb:10:in `current_user'
+  app/controllers/carts_controller.rb:5:in `index'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (62.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (17.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (248.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 18:45:55 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 500 Internal Server Error in 14ms
+
+NoMethodError (undefined method `username' for #<String:0x36b6d18>):
+  app/controllers/carts_controller.rb:5:in `index'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (78.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (163.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 18:46:21 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `username' for #<String:0x36b6910>):
+  app/controllers/carts_controller.rb:5:in `index'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (20.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (76.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 18:46:33 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `username' for #<String:0x34ab230>):
+  app/controllers/carts_controller.rb:5:in `index'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (46.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (167.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 18:46:37 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `username' for #<String:0x36cee50>):
+  app/controllers/carts_controller.rb:5:in `index'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (65.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (112.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (392.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 18:47:48 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `cart' for nil:NilClass):
+  app/controllers/carts_controller.rb:6:in `index'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (18.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (64.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 18:48:05 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `cart' for nil:NilClass):
+  app/controllers/carts_controller.rb:6:in `index'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (22.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (82.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 18:48:10 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 500 Internal Server Error in 14ms
+
+NoMethodError (undefined method `cart' for nil:NilClass):
+  app/controllers/carts_controller.rb:6:in `index'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 18:50:04 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `cart' for nil:NilClass):
+  app/controllers/carts_controller.rb:6:in `index'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (165.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 18:50:49 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 500 Internal Server Error in 18ms
+
+NoMethodError (undefined method `cart' for nil:NilClass):
+  app/controllers/carts_controller.rb:6:in `index'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (56.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 18:54:27 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 500 Internal Server Error in 66ms
+
+NoMethodError (undefined method `cart' for nil:NilClass):
+  app/controllers/carts_controller.rb:6:in `index'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (9.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (61.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 18:55:14 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `cart' for nil:NilClass):
+  app/controllers/carts_controller.rb:7:in `index'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 18:55:27 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-12 18:55:28 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 410ms (Views: 89.0ms | ActiveRecord: 62.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 18:55:32 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 18:55:33 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 18:58:56 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-12 18:58:57 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 402ms (Views: 115.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 18:59:04 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 18:59:04 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 19:07:02 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-12 19:07:02 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 110ms (Views: 106.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:07:09 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:07:09 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 19:08:46 -0400
+
+SyntaxError (C:/Users/Sarah/Documents/2012-2013/6.170/sedris_proj2/app/controllers/carts_controller.rb:27: syntax error, unexpected $end, expecting keyword_end):
+  activesupport (3.2.11) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.11) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.11) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `_run__1063801574__call__243919904__callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (181.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (249.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 19:09:03 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/signup
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `cart' for nil:NilClass):
+  app/controllers/carts_controller.rb:6:in `index'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (50.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (104.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 19:09:15 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/signup
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `cart' for nil:NilClass):
+  app/controllers/carts_controller.rb:6:in `index'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 19:10:05 -0400
+Processing by CartsController#index as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `cart' for nil:NilClass):
+  app/controllers/carts_controller.rb:6:in `index'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (52.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 19:10:31 -0400
+Processing by CartsController#index as HTML
+Completed 500 Internal Server Error in 85ms
+
+ActionView::MissingTemplate (Missing template carts/authenticate, application/authenticate with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "C:/Users/Sarah/Documents/2012-2013/6.170/sedris_proj2/app/views"
+):
+  app/controllers/carts_controller.rb:5:in `index'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (8.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 19:13:59 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/signup
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (undefined method `cart' for nil:NilClass):
+  app/controllers/carts_controller.rb:6:in `index'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (57.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 19:14:12 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 19ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:14:12 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (50.0ms)
+Completed 200 OK in 703ms (Views: 216.0ms | ActiveRecord: 31.0ms)
+
+
+Started GET "/assets/signup.css?body=1" for 127.0.0.1 at 2013-03-12 19:14:15 -0400
+Served asset /signup.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:14:15 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:14:15 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2013-03-12 19:15:10 -0400
+Processing by ItemsController#index as HTML
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:15:10 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (2.0ms)
+Completed 200 OK in 145ms (Views: 21.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:15:11 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/signup.css?body=1" for 127.0.0.1 at 2013-03-12 19:15:11 -0400
+Served asset /signup.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:15:11 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:16:52 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (2.0ms)
+Completed 200 OK in 51ms (Views: 32.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:16:53 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/signup.css?body=1" for 127.0.0.1 at 2013-03-12 19:16:53 -0400
+Served asset /signup.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:16:53 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-03-12 19:17:00 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (350.0ms)
+Completed 200 OK in 403ms (Views: 403.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:17:01 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:17:01 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-03-12 19:18:47 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:18:50 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:18:50 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:18:57 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (1.0ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:19:00 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/signup.css?body=1" for 127.0.0.1 at 2013-03-12 19:19:00 -0400
+Served asset /signup.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:19:00 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/shoppers/new" for 127.0.0.1 at 2013-03-12 19:19:08 -0400
+Processing by ShoppersController#new as HTML
+  Rendered shoppers/new.html.erb within layouts/application (310.0ms)
+Completed 200 OK in 407ms (Views: 352.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:19:09 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:19:09 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/shoppers/cart" for 127.0.0.1 at 2013-03-12 19:19:16 -0400
+
+AbstractController::ActionNotFound (The action 'show' could not be found for ShoppersController):
+  actionpack (3.2.11) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.11) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.11) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.11) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.11) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.11) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.11) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `_run__1063801574__call__243919904__callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (2.0ms)
+
+
+Started GET "/shoppers/new" for 127.0.0.1 at 2013-03-12 19:19:42 -0400
+Processing by ShoppersController#new as HTML
+  Rendered shoppers/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 70ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:19:47 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:19:47 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 19:19:52 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:19:52 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (2.0ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:19:52 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/signup.css?body=1" for 127.0.0.1 at 2013-03-12 19:19:52 -0400
+Served asset /signup.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:19:52 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 19:21:03 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:21:03 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (2.0ms)
+Completed 200 OK in 132ms (Views: 71.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:21:07 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/signup.css?body=1" for 127.0.0.1 at 2013-03-12 19:21:07 -0400
+Served asset /signup.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:21:07 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/carts" for 127.0.0.1 at 2013-03-12 19:21:16 -0400
+
+ActionController::RoutingError (No route matches [GET] "/carts"):
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 19:22:18 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:22:18 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (1.0ms)
+ERROR: compiling _app_views_layouts_signup_html_erb__138869357_28851288 RAISED C:/Users/Sarah/Documents/2012-2013/6.170/sedris_proj2/app/views/layouts/signup.html.erb:14: syntax error, unexpected $undefined, expecting keyword_end
+		alert: ');@=alert;@output_buffer.safe_concat('
+		           ^
+Function body:           def _app_views_layouts_signup_html_erb__138869357_28851288(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "layouts/signup";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<!DOCTYPE html>
+<html>
+<head>
+  <title>Shopping Cart</title>
+  ');@output_buffer.append= ( stylesheet_link_tag "bootstrap.min", :media => "all" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( stylesheet_link_tag "signup", :media => "all");@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( javascript_include_tag "bootstrap.min" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( javascript_include_tag "http://code.jquery.com/jquery.js" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( csrf_meta_tags );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</head>
+<body>
+<div class="container">
+	<div class="signup text-center">
+		alert: ');@=alert;@output_buffer.safe_concat('
+');@output_buffer.safe_concat('	<h3>ShoppingCart</h3>
+	<p>
+	');@output_buffer.append= ( link_to 'Login', login_path, :class=>"btn btn-success btn-large" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('	</p>
+	or
+	<br><br>
+	<p>
+	  ');@output_buffer.append= ( link_to 'New Shopper Signup', new_shopper_path, :class=>"btn btn-primary btn-large" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('	</p>
+	<p>
+	');@output_buffer.append= ( link_to 'New Shopkeeper Signup', new_shopkeeper_path, :class=>"btn btn-primary btn-large" );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('	</p>
+	to get started.
+	</div>
+</div>
+</body>
+</html>
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_view/template.rb:297:in `module_eval'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_view/template.rb:297:in `compile'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_view/template.rb:232:in `compile!'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_view/template.rb:144:in `block in render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/notifications.rb:125:in `instrument'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_view/template.rb:143:in `render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_view/renderer/template_renderer.rb:59:in `render_with_layout'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_view/renderer/template_renderer.rb:18:in `render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_view/renderer/renderer.rb:36:in `render_template'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_view/renderer/renderer.rb:17:in `render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/abstract_controller/rendering.rb:110:in `_render_template'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/abstract_controller/rendering.rb:88:in `render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_controller/metal/rendering.rb:16:in `render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+C:/Ruby193/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/activerecord-3.2.11/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_controller/metal/instrumentation.rb:39:in `render'
+C:/Users/Sarah/Documents/2012-2013/6.170/sedris_proj2/app/controllers/users_controller.rb:4:in `new'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/abstract_controller/base.rb:167:in `process_action'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_controller/metal/rendering.rb:10:in `process_action'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:414:in `_run__80885849__process_action__434856020__callbacks'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:405:in `__run_callback'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:81:in `run_callbacks'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/abstract_controller/callbacks.rb:17:in `process_action'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_controller/metal/rescue.rb:29:in `process_action'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/notifications.rb:123:in `block in instrument'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/notifications.rb:123:in `instrument'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/activerecord-3.2.11/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/abstract_controller/base.rb:121:in `process'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/abstract_controller/rendering.rb:45:in `process'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_controller/metal.rb:203:in `dispatch'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_controller/metal.rb:246:in `block in action'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/routing/route_set.rb:73:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/routing/route_set.rb:36:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/routing/route_set.rb:601:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/head.rb:14:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/flash.rb:242:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/activerecord-3.2.11/lib/active_record/query_cache.rb:64:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:405:in `_run__1063801574__call__243919904__callbacks'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:405:in `__run_callback'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:81:in `run_callbacks'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/rack/logger.rb:32:in `call_app'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/rack/logger.rb:16:in `block in call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/tagged_logging.rb:22:in `tagged'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/rack/logger.rb:16:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.2.11/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/static.rb:62:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/engine.rb:479:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/application.rb:223:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/railties-3.2.11/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+Completed 500 Internal Server Error in 171ms
+
+ActionView::Template::Error (C:/Users/Sarah/Documents/2012-2013/6.170/sedris_proj2/app/views/layouts/signup.html.erb:14: syntax error, unexpected $undefined, expecting keyword_end
+		alert: ');@=alert;@output_buffer.safe_concat('
+		           ^):
+    11: <body>
+    12: <div class="container">
+    13: 	<div class="signup text-center">
+    14: 		alert: <%@=alert%>
+    15: 	<h3>ShoppingCart</h3>
+    16: 	<p>
+    17: 	<%= link_to 'Login', login_path, :class=>"btn btn-success btn-large" %>
+  app/controllers/users_controller.rb:4:in `new'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (19.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (36.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (137.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 19:22:36 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:22:36 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (1.0ms)
+Completed 200 OK in 237ms (Views: 237.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:22:37 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/signup.css?body=1" for 127.0.0.1 at 2013-03-12 19:22:37 -0400
+Served asset /signup.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:22:37 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 19:26:20 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/signup
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:26:21 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (1.0ms)
+Completed 200 OK in 234ms (Views: 214.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:26:25 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/signup.css?body=1" for 127.0.0.1 at 2013-03-12 19:26:25 -0400
+Served asset /signup.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:26:25 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 19:27:19 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/signup
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `cart' for nil:NilClass):
+  app/controllers/carts_controller.rb:6:in `index'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (279.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (24.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (449.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 19:29:39 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:29:39 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:29:39 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:29:39 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 39ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:29:39 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:29:39 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:29:39 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:29:40 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:29:40 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:29:40 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:29:40 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:29:40 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:29:40 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:29:40 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:29:40 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:29:40 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:29:40 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:29:40 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:29:40 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:29:40 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:29:40 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 19:30:19 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 25ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:30:19 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:30:19 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:30:19 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:30:19 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:30:19 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:30:19 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:30:19 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 37ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:30:19 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:30:19 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:30:19 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:30:19 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:30:19 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:30:19 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:30:19 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:30:19 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:30:20 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:30:20 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:30:20 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:30:20 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:30:20 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:36:14 -0400
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 217ms
+
+NoMethodError (undefined method `current_page?' for #<UsersController:0x368c838>):
+  app/controllers/application_controller.rb:14:in `authenticate'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (60.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (174.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:36:30 -0400
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 58ms
+
+NoMethodError (undefined method `current_path?' for #<UsersController:0x3686958>):
+  app/controllers/application_controller.rb:14:in `authenticate'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (18.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (153.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:41:12 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3265ms (ActiveRecord: 2151.1ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:41:20 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:41:20 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:41:20 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:41:20 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:41:21 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:41:21 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:41:21 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:41:21 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:41:21 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:41:21 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:41:21 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:41:24 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:41:24 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:41:24 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:41:24 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:41:24 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:41:24 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:41:24 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:41:24 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:41:24 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:46:09 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 30ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:46:09 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:46:10 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:46:10 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:46:10 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:46:10 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:46:10 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:46:10 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:46:10 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:46:10 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:46:10 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:46:10 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:46:10 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:46:10 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:46:10 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:46:10 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:46:10 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:46:10 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:46:10 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:46:10 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:46:10 -0400
+Processing by UsersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 19:47:10 -0400
+Processing by CartsController#index as HTML
+Completed 500 Internal Server Error in 24ms
+
+NoMethodError (undefined method `cart' for nil:NilClass):
+  app/controllers/carts_controller.rb:6:in `index'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (97.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (229.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-12 19:47:19 -0400
+Processing by CartsController#index as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 88ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:47:20 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (70.0ms)
+Completed 200 OK in 846ms (Views: 818.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:47:21 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (40ms)
+
+
+Started GET "/assets/signup.css?body=1" for 127.0.0.1 at 2013-03-12 19:47:21 -0400
+Served asset /signup.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:47:21 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2013-03-12 19:47:41 -0400
+Processing by OrdersController#index as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:47:41 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (1.0ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/signup.css?body=1" for 127.0.0.1 at 2013-03-12 19:47:42 -0400
+Served asset /signup.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:47:42 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:47:42 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/shoppers/new" for 127.0.0.1 at 2013-03-12 19:48:15 -0400
+Processing by ShoppersController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:48:16 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (1.0ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:48:16 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/signup.css?body=1" for 127.0.0.1 at 2013-03-12 19:48:16 -0400
+Served asset /signup.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:48:16 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/shoppers/new" for 127.0.0.1 at 2013-03-12 19:49:41 -0400
+
+SyntaxError (C:/Users/Sarah/Documents/2012-2013/6.170/sedris_proj2/app/controllers/shoppers_controller.rb:2: syntax error, unexpected ':', expecting keyword_end
+	skip_before_filter :authenticate :only => [:new, :create]
+	                                  ^):
+  activesupport (3.2.11) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.11) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.11) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `_run__1063801574__call__243919904__callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (84.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (12.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (142.0ms)
+
+
+Started GET "/shoppers/new" for 127.0.0.1 at 2013-03-12 19:49:54 -0400
+Processing by ShoppersController#new as HTML
+  Rendered shoppers/new.html.erb within layouts/application (367.0ms)
+Completed 200 OK in 586ms (Views: 459.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:49:55 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:49:55 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:49:59 -0400
+
+SyntaxError (C:/Users/Sarah/Documents/2012-2013/6.170/sedris_proj2/app/controllers/users_controller.rb:2: syntax error, unexpected ':', expecting keyword_end
+	skip_before_filter :authenticate :only => [:new, :create]
+	                                  ^):
+  activesupport (3.2.11) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.11) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.11) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.11) lib/action_dispatch/routing/route_set.rb:601:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.11) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.11) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `_run__1063801574__call__243919904__callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.11) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.11) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.11) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.11) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.11) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.11) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.11) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.11) lib/rails/engine.rb:479:in `call'
+  railties (3.2.11) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.11) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  C:/Ruby193/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_trace.erb (24.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (28.0ms)
+  Rendered C:/Ruby193/lib/ruby/gems/1.9.1/gems/actionpack-3.2.11/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (114.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:50:08 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (2.0ms)
+Completed 200 OK in 42ms (Views: 23.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:50:08 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/signup.css?body=1" for 127.0.0.1 at 2013-03-12 19:50:08 -0400
+Served asset /signup.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:50:08 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-03-12 19:50:11 -0400
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:50:11 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (1.0ms)
+Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:50:11 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/signup.css?body=1" for 127.0.0.1 at 2013-03-12 19:50:12 -0400
+Served asset /signup.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:50:12 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:50:32 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (1.0ms)
+Completed 200 OK in 43ms (Views: 22.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/signup.css?body=1" for 127.0.0.1 at 2013-03-12 19:50:32 -0400
+Served asset /signup.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:50:32 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:50:32 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-03-12 19:50:34 -0400
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:50:34 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (1.0ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:50:34 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/signup.css?body=1" for 127.0.0.1 at 2013-03-12 19:50:34 -0400
+Served asset /signup.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:50:34 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-03-12 19:50:37 -0400
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:50:37 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (1.0ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:50:38 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:50:38 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/signup.css?body=1" for 127.0.0.1 at 2013-03-12 19:50:38 -0400
+Served asset /signup.css - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-03-12 19:50:54 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 132ms (Views: 131.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:50:54 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:50:55 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2013-03-12 19:51:00 -0400
+Processing by ItemsController#index as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 38ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-12 19:51:00 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (1.0ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-12 19:51:00 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/signup.css?body=1" for 127.0.0.1 at 2013-03-12 19:51:01 -0400
+Served asset /signup.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-12 19:51:01 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)

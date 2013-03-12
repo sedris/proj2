@@ -1,4 +1,6 @@
 class ShopkeepersController < ApplicationController
+	skip_before_filter :authenticate, :only => [:new, :create]
+
 	def new
 		@user = Shopkeeper.new
 	end
