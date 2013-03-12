@@ -10,13 +10,11 @@ SedrisProj2::Application.routes.draw do
   resources :users
   resources :sessions
   resources :items
-
-  resources :shoppers do
-    resources :orders
-  end
+  resources :shoppers
+  resources :orders
+  
   resources :shopkeepers do
     resources :items
-    resources :orders
   end
 
   # Sample of regular route:

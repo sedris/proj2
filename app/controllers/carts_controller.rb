@@ -3,6 +3,7 @@ class CartsController < ApplicationController
   # GET /carts.json
   def index
     flash.now.alert = current_user.email
+    @cart = current_user.cart
     @items = current_user.cart.items
 
     respond_to do |format|
