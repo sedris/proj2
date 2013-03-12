@@ -23,6 +23,7 @@
 <table>
   <tr>
     <th>Order ID</th>
+    <th>Shopper</th>
     <th>Items</th>
     <th></th>
   </tr>
@@ -30,6 +31,7 @@
 <% @shopkeeper_orders.each do |order| %>
   <tr>
     <td><%= order.id %></td>
+    <td><%= order.cart.shopper.email %></td>
     <td><% order.items.each do |item|%><%=item.name + " " %><%end%></td>
     <td></td>
   </tr>

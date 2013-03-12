@@ -19,7 +19,7 @@ class OrdersController < ApplicationController
 	# creates an order from a specified cart
 	def create
 		@cart = current_user.cart
-		@order = current_user.cart.create_order()
+		@order = current_user.cart.orders.create()
 		@cart.items.each do |item|
 			@order.items << item
 			if !@order.shopkeepers.include?(item.shopkeeper)
