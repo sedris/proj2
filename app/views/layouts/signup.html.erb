@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shopping Cart</title>
+  <%= stylesheet_link_tag "bootstrap.min", :media => "all" %>
+  <%= stylesheet_link_tag "signup", :media => "all"%>
+  <%= javascript_include_tag "bootstrap.min" %>
+  <%= javascript_include_tag "http://code.jquery.com/jquery.js" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="container">
+	<div class="signup text-center">
+	<h3>ShoppingCart</h3>
+	<p>
+	<%= link_to 'Login', login_path, :class=>"btn btn-success btn-large" %>
+	</p>
+	or
+	<br><br>
+	<p>
+	  <%= link_to 'New Shopper Signup', new_shopper_path, :class=>"btn btn-primary btn-large" %>
+	</p>
+	<p>
+	<%= link_to 'New Shopkeeper Signup', new_shopkeeper_path, :class=>"btn btn-primary btn-large" %>
+	</p>
+	to get started.
+	</div>
+</div>
+</body>
+</html>

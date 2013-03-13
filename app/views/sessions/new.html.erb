@@ -1,0 +1,22 @@
+<h1> Log in </h1>
+  <% if @alert%>
+    <div class="error_messages">
+      <h3>Form is invalid</h3>
+      <ul class="text-error">
+      	<li><%= @alert %></li>
+      </ul>
+    </div>
+  <% end %>
+	<%= form_tag sessions_path do %>
+		<div class = "field">
+			<%= label_tag :username %>
+			<%= text_field_tag :username, params[:username] %>
+		</div>
+		<div class = "field">
+			<%= label_tag :password %>
+			<%= password_field_tag :password %>
+		</div>
+		<div class = "action">
+			<%= submit_tag "Log In", :class => "btn btn-large btn-primary" %>
+		</div>
+	<% end %>

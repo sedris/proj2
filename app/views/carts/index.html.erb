@@ -1,0 +1,21 @@
+<h2><%= current_user.username %>'s cart</h2>
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @items.each do |item| %>
+  <tr>
+    <td><%= item.name %></td>
+    <td>$<%= item.price %></td>
+    <td><%= link_to 'Show', item %></td>
+    <td><%=button_to "Remove from Cart", remove_from_cart_path(item: item.id), :class => "btn btn-small btn-danger"%></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<%=button_to "Checkout", orders_path, :class => "btn btn-large btn-primary", :disable_with => "Please wait..."%>
