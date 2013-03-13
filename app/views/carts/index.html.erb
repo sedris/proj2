@@ -3,7 +3,6 @@
   <tr>
     <th>Name</th>
     <th>Price</th>
-    <th>Quantity</th>
     <th></th>
     <th></th>
   </tr>
@@ -12,7 +11,6 @@
   <tr>
     <td><%= item.name %></td>
     <td>$<%= item.price %></td>
-    <td><%= item.quantity %></td>
     <td><%= link_to 'Show', item %></td>
     <td><%=button_to "remove from cart", remove_from_cart_path(item: item.id)%></td>
   </tr>
