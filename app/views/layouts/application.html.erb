@@ -16,7 +16,9 @@
       <li><a href="/">Home</a></li>
       <li><a href="/cart">Cart</a></li>
       <li><a href="/orders">Orders</a></li>
-      <li><a href="/items">Items</a></li>
+      <% if current_user.is_a?(Shopkeeper) %>
+        <li><a href="/items"> Your Items</a></li>
+      <% end %>
     </ul>
     <ul class="nav pull-right">
       <% if current_user %>

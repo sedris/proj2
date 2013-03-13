@@ -11,7 +11,7 @@ class ShoppersController < ApplicationController
 			# set the session for the newly created user
 			# user will be "logged in"
 			session[:user_id] = @user.id
-			redirect_to root_url, :notice => "signed up!"
+			redirect_to root_url
 		else
 			render "new"
 		end

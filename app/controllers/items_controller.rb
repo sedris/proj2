@@ -1,25 +1,14 @@
 class ItemsController < ApplicationController
-  # GET /items
-  # GET /items.json
+  # GET /items or
+  # GET /shopkeepers/:shopkeeper_id/items
   def index
-    if !current_user
-      redirect_to signup_path, :notice => "Must be logged in to view" and return
-    end
-    # if this is the current user's shop, allow for editing
-    if params.has_key?(:shopkeeper_id)
-      @shopkeeper = Shopkeeper.find_by_id(params[:shopkeeper_id])
-    else
-      @shopkeeper = Shopkeeper.find_by_id(session[:user_id])
+    @shopkeeper = Shopkeeper.find_by_id(params[:shopkeeper_id])
+    # if gotten without params, is current_user's store
+    if !@shopkeeper
+      @shopkeeper = current_user
     end
 
-    # if no shopkeeper was found
-    if !@shopkeeper
-      #redirect_to root_url :notice => "shopkeeper not found" and return
-      @shopkeeper = Shopkeeper.all.last
-      @items = @shopkeeper.items
-    else
-      @items = @shopkeeper.items
-    end
+    @items = @shopkeeper.items
 
     respond_to do |format|
       format.html # index.html.erb
@@ -31,9 +20,6 @@ class ItemsController < ApplicationController
   # GET /items/1.json
   # Shows information for this item
   def show
-    if !current_user
-      redirect_to signup_path, :notice => "Must be logged in to view" and return
-    end
     @item = Item.find(params[:id])
 
     respond_to do |format|
@@ -45,9 +31,6 @@ class ItemsController < ApplicationController
   # GET /items/new
   # GET /items/new.json
   def new
-    if !current_user
-      redirect_to signup_path, :notice => "Must be logged in to view" and return
-    end
     @item = User.find(session[:user_id]).items.new
 
     respond_to do |format|
@@ -58,23 +41,18 @@ class ItemsController < ApplicationController
 
   # GET /items/1/edit
   def edit
-    if !current_user
-      redirect_to signup_path, :notice => "Must be logged in to view" and return
-    end
     @item = Item.find(params[:id])
   end
 
   # POST /items
   # POST /items.json
   def create
-    if !current_user
-      redirect_to signup_path, :notice => "Must be logged in to view" and return
-    end
     @item = User.find(session[:user_id]).items.new(params[:item])
+    shopkeeper = @item.shopkeeper
 
     respond_to do |format|
       if @item.save
-        format.html { redirect_to @item, notice: 'Item was successfully created.' }
+        format.html { redirect_to shopkeeper_items_path(shopkeeper.id), notice: 'Item was successfully created.' }
         format.json { render json: @item, status: :created, location: @item }
       else
         format.html { render action: "new" }
@@ -86,9 +64,6 @@ class ItemsController < ApplicationController
   # PUT /items/1
   # PUT /items/1.json
   def update
-    if !current_user
-      redirect_to signup_path, :notice => "Must be logged in to view" and return
-    end
     @item = Item.find(params[:id])
 
     respond_to do |format|
@@ -105,9 +80,6 @@ class ItemsController < ApplicationController
   # DELETE /items/1
   # DELETE /items/1.json
   def destroy
-    if !current_user
-      redirect_to signup_path, :notice => "Must be logged in to view" and return
-    end
     @item = Item.find(params[:id])
     @item.destroy
 
@@ -118,10 +90,6 @@ class ItemsController < ApplicationController
   end
 
   def add_to_cart
-    if !current_user
-      redirect_to signup_path, :notice => "Must be logged in to view" and return
-    end
-    
     if !current_user.cart
       current_user.cart = Cart.create()
     end

@@ -11,8 +11,16 @@
   <tr>
     <td><%= user.username %></td>
     <td><%= user.type %></td>
-    <td><%= link_to 'Show', user %></td>
-    <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td>
+      <% if user.is_a?(Shopkeeper)%>
+      <%= link_to 'View Shop', shopkeeper_items_path(user.id) %>
+      <% end %>
+    </td>
+    <% if current_user == user %>
+      <td><%= button_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-small btn-danger"  %></td>
+    <% else %>
+      <td></td>
+    <% end %>
   </tr>
 <% end %>
 </table>

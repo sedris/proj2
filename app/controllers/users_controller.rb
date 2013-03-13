@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-	skip_before_filter :authenticate, :only => [:new, :create]
+	skip_before_filter :authenticate, :only => [:new, :destroy]
 
 	def new
 		@user = User.new
@@ -17,29 +17,11 @@ class UsersController < ApplicationController
 		end
 	end
 
-	def create
-		# 1 for checked -> create shopkeeper
-		# 0 for unchecked -> create shopper
-		if (params[:user]["isShopkeeper"] == "1")
-			params[:user]["isShopkeeper"] = true
-			@user = User.new(params[:user])
-		else
-			params[:user]["isShopkeeper"] = false
-			@user = User.new(params[:user])
-		end
-		if @user.save
-			# set the session for the newly created user
-			# user will be "logged in"
-			session[:user_id] = @user.id
-			redirect_to root_url, :notice => "signed up!"
-		else
-			render "new"
-		end
-	end
-
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
+  	# remove user from session
+  	session[:user_id] = nil
     @user = User.find(params[:id])
     @user.destroy
 

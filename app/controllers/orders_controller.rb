@@ -1,19 +1,7 @@
 class OrdersController < ApplicationController
 	def index
-		@orders = Order.all
-		@shopkeeper = Shopkeeper.find_by_id(session[:user_id])
-    # if no shopkeeper was found
-    if !@shopkeeper
-    	# TODO: authenticate
-      @shopkeeper = Shopkeeper.all.last
-    end
-
-		@shopkeeper_orders = []
-		Order.all.each do |o|
-			if o.shopkeepers.include?(@shopkeeper)
-				@shopkeeper_orders.append(o)
-			end
-		end
+		@orders = current_user.cart.orders
+		#@shopkeeper = Shopkeeper.find_by_id(session[:user_id])
 	end
 
 	# creates an order from a specified cart
@@ -31,4 +19,16 @@ class OrdersController < ApplicationController
 		current_user.cart.items = []
 		redirect_to cart_path
 	end
+
+	# GET /order/1
+  # GET /order/1.json
+  # Shows information for this order
+  def show
+    @order = Order.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @order }
+    end
+  end
 end

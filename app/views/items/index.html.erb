@@ -1,24 +1,38 @@
-<h1>Listing <%= @shopkeeper.username %>'s Items</h1>
+<h2><%= @shopkeeper.username %>'s Items</h2>
+<% if current_user == @shopkeeper %>
+  <%= link_to 'New item', new_item_path, :class => "btn btn-small btn-primary" %>
+<% end %>
+
+<br><br>
 <table class="table">
   <tr>
     <th>Name</th>
     <th>Price</th>
-    <th></th>
+    <th>Description</th>
     <th></th>
     <th></th>
   </tr>
-
 <% @items.each do |item| %>
   <tr>
     <td><%= item.name %></td>
     <td>$<%= item.price %></td>
-    <td><%= link_to 'Show', item %></td>
-    <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    <td><%=button_to "add to cart", add_to_cart_path(item: item.id, shopkeeper_id: @shopkeeper.id)%></td>
+    <td><%= item.description %></td>
+
+    <% if current_user == @shopkeeper %>
+      <td><%= button_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-small btn-danger" %></td>
+    <% else %>
+      <td></td>
+    <% end %>
+
+    <% if current_user == @shopkeeper %>
+    <td></td>
+    <% elsif !current_user.cart.items.include?(item) %>
+    <td><%=button_to "Add to Cart", add_to_cart_path(item: item.id, shopkeeper_id: @shopkeeper.id), :class => "btn btn-small btn-primary"%></td>
+    <% else %>
+        <td><%=button_to "Remove from Cart", remove_from_cart_path(item: item.id), :class => "btn btn-small btn-danger"%></td>
+    <% end %>
   </tr>
 <% end %>
 </table>
 
 <br />
-
-<%= link_to 'New item', new_item_path %>

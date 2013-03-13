@@ -1,0 +1,22 @@
+<p>
+  <b>Order by:</b>
+  <%= @order.cart.shopper.username %>
+  on <%= @order.created_at %>
+</p>
+
+<table class="table">
+  <tr>
+    <th>Item</th>
+    <th>Description</th>
+    <th>Price</th>
+  </tr>
+<% @order.items.each do |item| %>
+  <tr>
+    <td><%= item.name %></td>
+    <td><%= item.description %></td>
+    <td>$<%= item.price %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Back', orders_path %>

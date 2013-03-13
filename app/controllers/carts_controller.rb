@@ -13,9 +13,6 @@ class CartsController < ApplicationController
   end
 
   def remove_from_cart
-    if !current_user
-      redirect_to signup_path, :notice => "Must be logged in to view" and return
-    end
   	item = current_user.cart.items.find(params[:item])
     current_user.cart.items.delete(item)
     redirect_to cart_path
