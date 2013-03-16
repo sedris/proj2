@@ -11,12 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130312235408) do
+ActiveRecord::Schema.define(:version => 20130316191748) do
 
   create_table "carts", :force => true do |t|
     t.integer  "shopper_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "saved_id"
   end
 
   create_table "carts_items", :id => false, :force => true do |t|
@@ -38,6 +39,11 @@ ActiveRecord::Schema.define(:version => 20130312235408) do
     t.integer "item_id"
   end
 
+  create_table "items_saveds", :id => false, :force => true do |t|
+    t.integer "item_id"
+    t.integer "saved_id"
+  end
+
   create_table "orders", :force => true do |t|
     t.integer  "cart_id"
     t.datetime "created_at", :null => false
@@ -48,6 +54,14 @@ ActiveRecord::Schema.define(:version => 20130312235408) do
     t.integer "shopkeeper_id"
     t.integer "order_id"
   end
+
+  create_table "saveds", :force => true do |t|
+    t.integer  "shopper_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "saveds", ["shopper_id"], :name => "index_saveds_on_shopper_id"
 
   create_table "users", :force => true do |t|
     t.string   "username"

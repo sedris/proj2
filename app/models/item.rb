@@ -1,7 +1,8 @@
 class Item < ActiveRecord::Base
   attr_accessible :description, :name, :price
   belongs_to :shopkeeper
-
+  
+  has_and_belongs_to_many :saved
   has_and_belongs_to_many :orders
   has_and_belongs_to_many :carts
 
