@@ -12,6 +12,15 @@ class CartsController < ApplicationController
   
   end
 
+  def add_to_cart
+    if !current_user.cart
+      current_user.cart = Cart.create()
+    end
+    current_user.cart.items.push(Item.find(params[:item]))
+    #redirect_to items_path(shopkeeper_id: params[:shopkeeper_id])
+    redirect_to :back
+  end
+  
   def remove_from_cart
   	item = current_user.cart.items.find(params[:item])
     current_user.cart.items.delete(item)

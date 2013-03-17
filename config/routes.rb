@@ -20,7 +20,7 @@ SedrisProj2::Application.routes.draw do
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
-  match 'add_to_cart' => 'items#add_to_cart'
+  match 'add_to_cart' => 'carts#add_to_cart'
   match 'remove_from_cart' => 'carts#remove_from_cart'
   match 'saved' => 'saveds#index'
   match 'add_item' => 'saveds#add_item'

@@ -32,9 +32,11 @@
     </ul>
   </div>
 </div>
-
-  <% flash.each do |name, msg| %>
-    <%= content_tag :div, msg, :id => "flash#{name}" %>
+  
+  <% if !flash.empty? %>
+    <% flash.each do |name, msg| %>
+      <%= content_tag :div, msg, :id => "flash#{name}", :class => "text-warning" %>
+    <% end %>
   <% end %>
 
 

@@ -4,10 +4,12 @@ class Order < ActiveRecord::Base
   has_and_belongs_to_many :items
   has_and_belongs_to_many :shopkeepers
 
-	# only add shopkeeper
-	after_create :create_cart
+  validate :cart_not_empty, :before => :create
 
-	def create_cart
-		self.cart = Cart.create()
-	end
+  private
+	  def cart_not_empty
+	  	if self.cart.items.empty?
+	  		errors.add(:cart, 'is empty')
+	  	end
+	  end
 end

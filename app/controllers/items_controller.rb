@@ -88,13 +88,4 @@ class ItemsController < ApplicationController
       format.json { head :no_content }
     end
   end
-
-  def add_to_cart
-    if !current_user.cart
-      current_user.cart = Cart.create()
-    end
-    current_user.cart.items.push(Item.find(params[:item]))
-    #redirect_to items_path(shopkeeper_id: params[:shopkeeper_id])
-    redirect_to :back
-  end
 end

@@ -24,8 +24,12 @@ class SavedsController < ApplicationController
 		Cart.find(params[:cart]).items.each do |item|
 			cart.items.push(item)
 		end
-		current_user.saved.carts.push(cart)
-		redirect_to saved_path
+		current_user.saved.add_cart(cart)
+		if current_user.saved.errors.empty?
+			redirect_to saved_path, :notice => "Cart saved"
+		else
+			redirect_to :back, :notice => current_user.saved.errors.full_messages().last
+		end
 	end
 
 	# remove item from saved items

@@ -8,16 +8,22 @@ class OrdersController < ApplicationController
 	def create
 		@cart = current_user.cart
 		@order = current_user.cart.orders.create()
-		@cart.items.each do |item|
-			@order.items << item
-			if !@order.shopkeepers.include?(item.shopkeeper)
-				@order.shopkeepers << item.shopkeeper
-			end
-		end 
+		if @order.save
+			@cart.items.each do |item|
+				# add items and respective shopkeepers to order
+				# make a copy of the item so that item remains if order if deleted by shopkeeper
+				@order.items << Item.create(:name => item.name, :description => item.description, :price => item.price)
+				if !@order.shopkeepers.include?(item.shopkeeper)
+					@order.shopkeepers << item.shopkeeper
+				end
+			end 
 
-		# empty the cart
-		current_user.cart.items = []
-		redirect_to cart_path
+			# empty the cart
+			current_user.cart.items = []
+			redirect_to :back, :notice => "Checkout complete. Go to 'Orders' to view."
+		else
+			redirect_to :back, :flash => { :alert =>  "Checkout not completed: Cart cannot be empty" }
+		end
 	end
 
 	# GET /order/1
