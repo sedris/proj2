@@ -8,4 +8,13 @@ class Item < ActiveRecord::Base
 
   validates_presence_of :name, :on => :create
   validates_presence_of :price, :on => :create
+
+  validate :price_two_decimals, :before => :create
+
+  private
+	  def price_two_decimals
+	  	if self.price
+	  		errors.add(:cart, 'is empty')
+	  	end
+	  end
 end

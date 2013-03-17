@@ -11,7 +11,7 @@
   <tr>
     <td><%= item.name %></td>
     <td><%= item.description %></td>
-    <td>$<%= item.price %></td>
+    <td><%= number_to_currency(item.price) %></td>
     <td><%=button_to "Remove from Cart", remove_from_cart_path(item: item.id), :class => "btn btn-small btn-danger"%></td>
   </tr>
 <% end %>

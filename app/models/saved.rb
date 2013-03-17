@@ -3,6 +3,7 @@ class Saved < ActiveRecord::Base
   has_and_belongs_to_many :items
   has_many :carts
 
+  # Only save a cart if it has items, return an error otherwise
   def add_cart(cart)
   	if cart.items.empty?
 			errors.add(:cart, 'is empty. Cannot save.')

@@ -56478,3 +56478,666 @@ Served asset /bootstrap.min.css - 304 Not Modified (0ms)
 
 Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 17:16:00 -0400
 Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/logout" for 127.0.0.1 at 2013-03-17 17:24:37 -0400
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 44 LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 83ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-17 17:24:37 -0400
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-17 17:24:37 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (1.0ms)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 17:24:37 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/signup.css?body=1" for 127.0.0.1 at 2013-03-17 17:24:38 -0400
+Served asset /signup.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 17:24:38 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-03-17 17:24:41 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 53ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 17:24:41 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 17:24:41 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-03-17 17:24:46 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z2PR0DQW+kFJHwFLaHqFQI68v2/9ClF2r+WdA63u4dU=", "username"=>"dan", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'dan' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 290ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-17 17:24:46 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 43 LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 28ms (Views: 22.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 17:24:47 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 17:24:47 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/shopkeepers/43/items" for 127.0.0.1 at 2013-03-17 17:24:50 -0400
+Processing by ItemsController#index as HTML
+  Parameters: {"shopkeeper_id"=>"43"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 43 LIMIT 1[0m
+  [1m[35mShopkeeper Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."type" IN ('Shopkeeper') AND "users"."id" = 43 LIMIT 1
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."shopkeeper_id" = 43[0m
+  Rendered items/index.html.erb within layouts/application (96.0ms)
+Completed 200 OK in 123ms (Views: 114.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 17:24:50 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 17:24:50 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2013-03-17 17:24:52 -0400
+Processing by ItemsController#new as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 43 LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 43]]
+  Rendered items/_form.html.erb (8.0ms)
+  Rendered items/new.html.erb within layouts/application (159.0ms)
+Completed 200 OK in 186ms (Views: 178.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 17:24:53 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 17:24:53 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2013-03-17 17:25:03 -0400
+Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z2PR0DQW+kFJHwFLaHqFQI68v2/9ClF2r+WdA63u4dU=", "item"=>{"name"=>"test", "description"=>"test", "price"=>"2.11111"}, "commit"=>"Create"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 43 LIMIT 1
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 43]]
+  [1m[35mShopkeeper Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."type" IN ('Shopkeeper') AND "users"."id" = 43 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "items" ("created_at", "description", "name", "price", "shopkeeper_id", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 17 Mar 2013 21:25:03 UTC +00:00], ["description", "test"], ["name", "test"], ["price", #<BigDecimal:2c6e038,'0.211111E1',18(18)>], ["shopkeeper_id", 43], ["updated_at", Sun, 17 Mar 2013 21:25:03 UTC +00:00]]
+  [1m[36m (98.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/shopkeepers/43/items
+Completed 302 Found in 135ms (ActiveRecord: 104.0ms)
+
+
+Started GET "/shopkeepers/43/items" for 127.0.0.1 at 2013-03-17 17:25:03 -0400
+Processing by ItemsController#index as HTML
+  Parameters: {"shopkeeper_id"=>"43"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 43 LIMIT 1
+  [1m[36mShopkeeper Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."type" IN ('Shopkeeper') AND "users"."id" = 43 LIMIT 1[0m
+  [1m[35mItem Load (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."shopkeeper_id" = 43
+  Rendered items/index.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 80ms (Views: 72.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 17:25:03 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 17:25:04 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (1.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20130307023526)
+Migrating to AddTypeColumnToUsers (20130308024608)
+Migrating to CreateCarts (20130310231446)
+Migrating to CreateOrders (20130310231631)
+Migrating to CreateItems (20130311004626)
+Migrating to CartsItems (20130311005153)
+Migrating to OrdersItems (20130311005519)
+Migrating to AddShopkeeperIdToItems (20130311011713)
+Migrating to RenameTables (20130311013116)
+Migrating to ChangeOrderShopkeeperRelationship (20130312050835)
+Migrating to ChangeEmailToUsernameInUsers (20130312151453)
+Migrating to EditItem (20130312235408)
+Migrating to CreateSaveds (20130316191224)
+Migrating to AddSavedRelationships (20130316191748)
+Migrating to ChangeDecimal (20130317212303)
+  [1m[35m (1.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  CREATE TEMPORARY TABLE "altered_items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "shopkeeper_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "price" decimal) 
+  [1m[36m (0.0ms)[0m  [1mSELECT * FROM "items"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_items" ("id","name","description","shopkeeper_id","created_at","updated_at","price") VALUES (25, 'milk', NULL, 43, '2013-03-16 22:13:27.750754', '2013-03-16 22:13:27.903763', 3)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_items" ("id","name","description","shopkeeper_id","created_at","updated_at","price") VALUES (26, 'toast', NULL, NULL, '2013-03-17 18:28:27.519080', '2013-03-17 18:28:27.519080', 2)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_items" ("id","name","description","shopkeeper_id","created_at","updated_at","price") VALUES (27, 'milk', NULL, NULL, '2013-03-17 18:28:28.206120', '2013-03-17 18:28:28.206120', 3)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_items" ("id","name","description","shopkeeper_id","created_at","updated_at","price") VALUES (28, 'milk', NULL, NULL, '2013-03-17 18:46:03.464477', '2013-03-17 18:46:03.464477', 3)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_items" ("id","name","description","shopkeeper_id","created_at","updated_at","price") VALUES (29, 'milk', NULL, NULL, '2013-03-17 20:59:35.142019', '2013-03-17 20:59:35.142019', 3)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_items" ("id","name","description","shopkeeper_id","created_at","updated_at","price") VALUES (30, 'milk', NULL, NULL, '2013-03-17 21:01:02.974043', '2013-03-17 21:01:02.974043', 3)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "altered_items" ("id","name","description","shopkeeper_id","created_at","updated_at","price") VALUES (31, 'milk', NULL, NULL, '2013-03-17 21:01:49.958730', '2013-03-17 21:01:49.958730', 3)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "altered_items" ("id","name","description","shopkeeper_id","created_at","updated_at","price") VALUES (32, 'test', 'test', 43, '2013-03-17 21:25:03.353428', '2013-03-17 21:25:03.353428', 2.11111)[0m
+  [1m[35m (2.0ms)[0m  DROP TABLE "items"
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "shopkeeper_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  SELECT * FROM "altered_items"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "items" ("id","name","description","shopkeeper_id","created_at","updated_at") VALUES (25, 'milk', NULL, 43, '2013-03-16 22:13:27.750754', '2013-03-16 22:13:27.903763')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "items" ("id","name","description","shopkeeper_id","created_at","updated_at") VALUES (26, 'toast', NULL, NULL, '2013-03-17 18:28:27.519080', '2013-03-17 18:28:27.519080')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "items" ("id","name","description","shopkeeper_id","created_at","updated_at") VALUES (27, 'milk', NULL, NULL, '2013-03-17 18:28:28.206120', '2013-03-17 18:28:28.206120')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "items" ("id","name","description","shopkeeper_id","created_at","updated_at") VALUES (28, 'milk', NULL, NULL, '2013-03-17 18:46:03.464477', '2013-03-17 18:46:03.464477')
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "items" ("id","name","description","shopkeeper_id","created_at","updated_at") VALUES (29, 'milk', NULL, NULL, '2013-03-17 20:59:35.142019', '2013-03-17 20:59:35.142019')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "items" ("id","name","description","shopkeeper_id","created_at","updated_at") VALUES (30, 'milk', NULL, NULL, '2013-03-17 21:01:02.974043', '2013-03-17 21:01:02.974043')
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "items" ("id","name","description","shopkeeper_id","created_at","updated_at") VALUES (31, 'milk', NULL, NULL, '2013-03-17 21:01:49.958730', '2013-03-17 21:01:49.958730')[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "items" ("id","name","description","shopkeeper_id","created_at","updated_at") VALUES (32, 'test', 'test', 43, '2013-03-17 21:25:03.353428', '2013-03-17 21:25:03.353428')
+  [1m[36m (1.0ms)[0m  [1mDROP TABLE "altered_items"[0m
+  [1m[35m (2.0ms)[0m  rollback transaction
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-17 17:26:56 -0400
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 43 LIMIT 1[0m
+  [1m[35mCart Load (0.0ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."shopper_id" = 43 LIMIT 1
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 68[0m
+  Rendered carts/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 62ms (Views: 32.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 17:26:56 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 17:26:56 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-17 18:41:10 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 43 LIMIT 1
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 296ms (Views: 126.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 18:41:13 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 18:41:13 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/shopkeepers/43/items" for 127.0.0.1 at 2013-03-17 18:41:30 -0400
+Processing by ItemsController#index as HTML
+  Parameters: {"shopkeeper_id"=>"43"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 43 LIMIT 1
+  [1m[36mShopkeeper Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."type" IN ('Shopkeeper') AND "users"."id" = 43 LIMIT 1[0m
+  [1m[35mItem Load (2.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."shopkeeper_id" = 43
+  Rendered items/index.html.erb within layouts/application (127.0ms)
+Completed 200 OK in 207ms (Views: 174.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 18:41:31 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 18:41:31 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2013-03-17 18:41:35 -0400
+Processing by SessionsController#destroy as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 43 LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 11ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-17 18:41:35 -0400
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/signup
+Filter chain halted as :authenticate rendered or redirected
+Completed 302 Found in 86ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2013-03-17 18:41:35 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/signup (6.0ms)
+Completed 200 OK in 164ms (Views: 163.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 18:41:36 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 18:41:36 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/signup.css?body=1" for 127.0.0.1 at 2013-03-17 18:41:36 -0400
+Served asset /signup.css - 304 Not Modified (1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-03-17 18:41:38 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (91.0ms)
+Completed 200 OK in 145ms (Views: 133.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 18:41:39 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 18:41:39 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2013-03-17 18:41:44 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z2PR0DQW+kFJHwFLaHqFQI68v2/9ClF2r+WdA63u4dU=", "username"=>"sarah", "password"=>"[FILTERED]", "commit"=>"Log In"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."username" = 'sarah' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 321ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-03-17 18:41:45 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 44 LIMIT 1[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 41ms (Views: 35.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 18:41:45 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 18:41:45 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/shopkeepers/43/items" for 127.0.0.1 at 2013-03-17 18:41:47 -0400
+Processing by ItemsController#index as HTML
+  Parameters: {"shopkeeper_id"=>"43"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 44 LIMIT 1[0m
+  [1m[35mShopkeeper Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."type" IN ('Shopkeeper') AND "users"."id" = 43 LIMIT 1
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."shopkeeper_id" = 43[0m
+  [1m[35mSaved Load (1.0ms)[0m  SELECT "saveds".* FROM "saveds" WHERE "saveds"."shopper_id" = 44 LIMIT 1
+  [1m[36mItem Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "items" INNER JOIN "items_saveds" ON "items"."id" = "items_saveds"."item_id" WHERE "items_saveds"."saved_id" = 3 AND "items"."id" = 25 LIMIT 1[0m
+  [1m[35mCart Load (1.0ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."shopper_id" = 44 LIMIT 1
+  [1m[36mItem Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 72 AND "items"."id" = 25 LIMIT 1[0m
+  [1m[35mItem Exists (1.0ms)[0m  SELECT 1 AS one FROM "items" INNER JOIN "items_saveds" ON "items"."id" = "items_saveds"."item_id" WHERE "items_saveds"."saved_id" = 3 AND "items"."id" = 32 LIMIT 1
+  [1m[36mItem Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 72 AND "items"."id" = 32 LIMIT 1[0m
+  Rendered items/index.html.erb within layouts/application (262.0ms)
+Completed 200 OK in 304ms (Views: 271.0ms | ActiveRecord: 21.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 18:41:48 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 18:41:48 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-17 18:41:51 -0400
+Processing by CartsController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 44 LIMIT 1
+  [1m[36mCart Load (1.0ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."shopper_id" = 44 LIMIT 1[0m
+  [1m[35mItem Load (0.0ms)[0m  SELECT "items".* FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 72
+  Rendered carts/index.html.erb within layouts/application (135.0ms)
+Completed 200 OK in 256ms (Views: 248.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 18:41:52 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 18:41:52 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+
+
+Started POST "/add_to_cart?item=32" for 127.0.0.1 at 2013-03-17 18:41:58 -0400
+Processing by CartsController#add_to_cart as HTML
+  Parameters: {"authenticity_token"=>"z2PR0DQW+kFJHwFLaHqFQI68v2/9ClF2r+WdA63u4dU=", "item"=>"32"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 44 LIMIT 1[0m
+  [1m[35mCart Load (1.0ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."shopper_id" = 44 LIMIT 1
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "32"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (3.0ms)[0m  [1mINSERT INTO "carts_items" ("cart_id", "item_id") VALUES (72, 32)[0m
+  [1m[35m (410.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/shopkeepers/43/items
+Completed 302 Found in 459ms (ActiveRecord: 416.0ms)
+
+
+Started GET "/shopkeepers/43/items" for 127.0.0.1 at 2013-03-17 18:41:59 -0400
+Processing by ItemsController#index as HTML
+  Parameters: {"shopkeeper_id"=>"43"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 44 LIMIT 1[0m
+  [1m[35mShopkeeper Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."type" IN ('Shopkeeper') AND "users"."id" = 43 LIMIT 1
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."shopkeeper_id" = 43[0m
+  [1m[35mSaved Load (1.0ms)[0m  SELECT "saveds".* FROM "saveds" WHERE "saveds"."shopper_id" = 44 LIMIT 1
+  [1m[36mItem Exists (3.0ms)[0m  [1mSELECT 1 AS one FROM "items" INNER JOIN "items_saveds" ON "items"."id" = "items_saveds"."item_id" WHERE "items_saveds"."saved_id" = 3 AND "items"."id" = 25 LIMIT 1[0m
+  [1m[35mCart Load (1.0ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."shopper_id" = 44 LIMIT 1
+  [1m[36mItem Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 72 AND "items"."id" = 25 LIMIT 1[0m
+  [1m[35mItem Exists (0.0ms)[0m  SELECT 1 AS one FROM "items" INNER JOIN "items_saveds" ON "items"."id" = "items_saveds"."item_id" WHERE "items_saveds"."saved_id" = 3 AND "items"."id" = 32 LIMIT 1
+  [1m[36mItem Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 72 AND "items"."id" = 32 LIMIT 1[0m
+  Rendered items/index.html.erb within layouts/application (108.0ms)
+Completed 200 OK in 139ms (Views: 122.0ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 18:42:00 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 18:42:00 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-17 18:42:02 -0400
+Processing by CartsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 44 LIMIT 1
+  [1m[36mCart Load (1.0ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."shopper_id" = 44 LIMIT 1[0m
+  [1m[35mItem Load (1.0ms)[0m  SELECT "items".* FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 72
+  Rendered carts/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 25ms (Views: 20.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 18:42:02 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 18:42:02 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-17 18:43:06 -0400
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 44 LIMIT 1[0m
+  [1m[35mCart Load (1.0ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."shopper_id" = 44 LIMIT 1
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 72[0m
+  Rendered carts/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 60ms (Views: 52.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 18:43:07 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 18:43:07 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/shopkeepers/43/items" for 127.0.0.1 at 2013-03-17 18:43:10 -0400
+Processing by ItemsController#index as HTML
+  Parameters: {"shopkeeper_id"=>"43"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 44 LIMIT 1
+  [1m[36mShopkeeper Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."type" IN ('Shopkeeper') AND "users"."id" = 43 LIMIT 1[0m
+  [1m[35mItem Load (1.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."shopkeeper_id" = 43
+  [1m[36mSaved Load (1.0ms)[0m  [1mSELECT "saveds".* FROM "saveds" WHERE "saveds"."shopper_id" = 44 LIMIT 1[0m
+  [1m[35mItem Exists (1.0ms)[0m  SELECT 1 AS one FROM "items" INNER JOIN "items_saveds" ON "items"."id" = "items_saveds"."item_id" WHERE "items_saveds"."saved_id" = 3 AND "items"."id" = 25 LIMIT 1
+  [1m[36mCart Load (0.0ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."shopper_id" = 44 LIMIT 1[0m
+  [1m[35mItem Exists (1.0ms)[0m  SELECT 1 AS one FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 72 AND "items"."id" = 25 LIMIT 1
+  [1m[36mItem Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "items" INNER JOIN "items_saveds" ON "items"."id" = "items_saveds"."item_id" WHERE "items_saveds"."saved_id" = 3 AND "items"."id" = 32 LIMIT 1[0m
+  [1m[35mItem Exists (1.0ms)[0m  SELECT 1 AS one FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 72 AND "items"."id" = 32 LIMIT 1
+  Rendered items/index.html.erb within layouts/application (54.0ms)
+Completed 200 OK in 173ms (Views: 163.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/shopkeepers/43/items" for 127.0.0.1 at 2013-03-17 18:43:13 -0400
+Processing by ItemsController#index as HTML
+  Parameters: {"shopkeeper_id"=>"43"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 44 LIMIT 1[0m
+  [1m[35mShopkeeper Load (2.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."type" IN ('Shopkeeper') AND "users"."id" = 43 LIMIT 1
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."shopkeeper_id" = 43[0m
+  [1m[35mSaved Load (1.0ms)[0m  SELECT "saveds".* FROM "saveds" WHERE "saveds"."shopper_id" = 44 LIMIT 1
+  [1m[36mItem Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "items" INNER JOIN "items_saveds" ON "items"."id" = "items_saveds"."item_id" WHERE "items_saveds"."saved_id" = 3 AND "items"."id" = 25 LIMIT 1[0m
+  [1m[35mCart Load (1.0ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."shopper_id" = 44 LIMIT 1
+  [1m[36mItem Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 72 AND "items"."id" = 25 LIMIT 1[0m
+  [1m[35mItem Exists (0.0ms)[0m  SELECT 1 AS one FROM "items" INNER JOIN "items_saveds" ON "items"."id" = "items_saveds"."item_id" WHERE "items_saveds"."saved_id" = 3 AND "items"."id" = 32 LIMIT 1
+  [1m[36mItem Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 72 AND "items"."id" = 32 LIMIT 1[0m
+  Rendered items/index.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 80ms (Views: 64.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 18:43:14 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 18:43:14 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started POST "/add_item?item=25" for 127.0.0.1 at 2013-03-17 18:43:17 -0400
+Processing by SavedsController#add_item as HTML
+  Parameters: {"authenticity_token"=>"z2PR0DQW+kFJHwFLaHqFQI68v2/9ClF2r+WdA63u4dU=", "item"=>"25"}
+  [1m[35mUser Load (2.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 44 LIMIT 1
+  [1m[36mSaved Load (0.0ms)[0m  [1mSELECT "saveds".* FROM "saveds" WHERE "saveds"."shopper_id" = 44 LIMIT 1[0m
+  [1m[35mItem Load (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "25"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (3.0ms)[0m  INSERT INTO "items_saveds" ("saved_id", "item_id") VALUES (3, 25)
+  [1m[36m (158.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/shopkeepers/43/items
+Completed 302 Found in 175ms (ActiveRecord: 163.0ms)
+
+
+Started GET "/shopkeepers/43/items" for 127.0.0.1 at 2013-03-17 18:43:17 -0400
+Processing by ItemsController#index as HTML
+  Parameters: {"shopkeeper_id"=>"43"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 44 LIMIT 1
+  [1m[36mShopkeeper Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."type" IN ('Shopkeeper') AND "users"."id" = 43 LIMIT 1[0m
+  [1m[35mItem Load (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."shopkeeper_id" = 43
+  [1m[36mSaved Load (1.0ms)[0m  [1mSELECT "saveds".* FROM "saveds" WHERE "saveds"."shopper_id" = 44 LIMIT 1[0m
+  [1m[35mItem Exists (1.0ms)[0m  SELECT 1 AS one FROM "items" INNER JOIN "items_saveds" ON "items"."id" = "items_saveds"."item_id" WHERE "items_saveds"."saved_id" = 3 AND "items"."id" = 25 LIMIT 1
+  [1m[36mCart Load (1.0ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."shopper_id" = 44 LIMIT 1[0m
+  [1m[35mItem Exists (1.0ms)[0m  SELECT 1 AS one FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 72 AND "items"."id" = 25 LIMIT 1
+  [1m[36mItem Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "items" INNER JOIN "items_saveds" ON "items"."id" = "items_saveds"."item_id" WHERE "items_saveds"."saved_id" = 3 AND "items"."id" = 32 LIMIT 1[0m
+  [1m[35mItem Exists (2.0ms)[0m  SELECT 1 AS one FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 72 AND "items"."id" = 32 LIMIT 1
+  Rendered items/index.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 104ms (Views: 89.0ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 18:43:18 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 18:43:18 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/saved" for 127.0.0.1 at 2013-03-17 18:43:20 -0400
+Processing by SavedsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 44 LIMIT 1[0m
+  [1m[35mSaved Load (1.0ms)[0m  SELECT "saveds".* FROM "saveds" WHERE "saveds"."shopper_id" = 44 LIMIT 1
+  [1m[36mCart Load (1.0ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."saved_id" = 3[0m
+  [1m[35mItem Load (1.0ms)[0m  SELECT "items".* FROM "items" INNER JOIN "items_saveds" ON "items"."id" = "items_saveds"."item_id" WHERE "items_saveds"."saved_id" = 3
+  [1m[36mCart Load (1.0ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."shopper_id" = 44 LIMIT 1[0m
+  [1m[35mItem Exists (0.0ms)[0m  SELECT 1 AS one FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 72 AND "items"."id" = 25 LIMIT 1
+  Rendered saveds/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 96ms (Views: 85.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 18:43:20 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 18:43:20 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-17 18:43:26 -0400
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 44 LIMIT 1[0m
+  [1m[35mCart Load (0.0ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."shopper_id" = 44 LIMIT 1
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 72[0m
+  Rendered carts/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 40ms (Views: 32.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 18:43:26 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 18:43:27 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (1ms)
+
+
+Started POST "/add_cart?cart=72" for 127.0.0.1 at 2013-03-17 18:43:32 -0400
+Processing by SavedsController#add_cart as HTML
+  Parameters: {"authenticity_token"=>"z2PR0DQW+kFJHwFLaHqFQI68v2/9ClF2r+WdA63u4dU=", "cart"=>"72"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 44 LIMIT 1
+  [1m[36m (2.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (28.0ms)[0m  INSERT INTO "carts" ("created_at", "saved_id", "shopper_id", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Sun, 17 Mar 2013 22:43:32 UTC +00:00], ["saved_id", nil], ["shopper_id", nil], ["updated_at", Sun, 17 Mar 2013 22:43:32 UTC +00:00]]
+  [1m[36m (97.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mCart Load (1.0ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = ? LIMIT 1  [["id", "72"]]
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 72[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (4.0ms)[0m  [1mINSERT INTO "carts_items" ("cart_id", "item_id") VALUES (92, 25)[0m
+  [1m[35m (114.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (4.0ms)[0m  INSERT INTO "carts_items" ("cart_id", "item_id") VALUES (92, 32)
+  [1m[36m (86.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSaved Load (1.0ms)[0m  SELECT "saveds".* FROM "saveds" WHERE "saveds"."shopper_id" = 44 LIMIT 1
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 92[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (16.0ms)[0m  [1mUPDATE "carts" SET "saved_id" = 3, "updated_at" = '2013-03-17 22:43:32.655785' WHERE "carts"."id" = 92[0m
+  [1m[35m (187.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/saved
+Completed 302 Found in 870ms (ActiveRecord: 542.0ms)
+
+
+Started GET "/saved" for 127.0.0.1 at 2013-03-17 18:43:32 -0400
+Processing by SavedsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 44 LIMIT 1[0m
+  [1m[35mSaved Load (1.0ms)[0m  SELECT "saveds".* FROM "saveds" WHERE "saveds"."shopper_id" = 44 LIMIT 1
+  [1m[36mCart Load (9.0ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."saved_id" = 3[0m
+  [1m[35mItem Load (12.0ms)[0m  SELECT "items".* FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 92
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "items_saveds" ON "items"."id" = "items_saveds"."item_id" WHERE "items_saveds"."saved_id" = 3[0m
+  [1m[35mCart Load (1.0ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."shopper_id" = 44 LIMIT 1
+  [1m[36mItem Exists (0.0ms)[0m  [1mSELECT 1 AS one FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 72 AND "items"."id" = 25 LIMIT 1[0m
+  Rendered saveds/index.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 64ms (Views: 33.0ms | ActiveRecord: 25.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 18:43:33 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 18:43:33 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-17 18:43:48 -0400
+Processing by CartsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 44 LIMIT 1
+  [1m[36mCart Load (1.0ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."shopper_id" = 44 LIMIT 1[0m
+  [1m[35mItem Load (1.0ms)[0m  SELECT "items".* FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 72
+  Rendered carts/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 37ms (Views: 30.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 18:43:48 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 18:43:49 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started POST "/orders" for 127.0.0.1 at 2013-03-17 18:43:56 -0400
+Processing by OrdersController#create as HTML
+  Parameters: {"authenticity_token"=>"z2PR0DQW+kFJHwFLaHqFQI68v2/9ClF2r+WdA63u4dU="}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 44 LIMIT 1[0m
+  [1m[35mCart Load (1.0ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."shopper_id" = 44 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mCart Load (0.0ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."id" = 72 LIMIT 1
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 72[0m
+  [1m[35mSQL (10.0ms)[0m  INSERT INTO "orders" ("cart_id", "created_at", "updated_at") VALUES (?, ?, ?)  [["cart_id", 72], ["created_at", Sun, 17 Mar 2013 22:43:56 UTC +00:00], ["updated_at", Sun, 17 Mar 2013 22:43:56 UTC +00:00]]
+  [1m[36m (83.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mItem Load (1.0ms)[0m  SELECT "items".* FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 72
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36mShopkeeper Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."type" IN ('Shopkeeper') AND "users"."id" = 43 LIMIT 1[0m
+  [1m[35mShopkeeper Exists (1.0ms)[0m  SELECT 1 AS one FROM "users" INNER JOIN "orders_shopkeepers" ON "users"."id" = "orders_shopkeepers"."shopkeeper_id" WHERE "users"."type" IN ('Shopkeeper') AND "orders_shopkeepers"."order_id" = 51 AND "users"."id" = 43 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (3.0ms)[0m  INSERT INTO "orders_shopkeepers" ("order_id", "shopkeeper_id") VALUES (51, 43)
+  [1m[36m (96.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mShopkeeper Load (2.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."type" IN ('Shopkeeper') AND "users"."id" = 43 LIMIT 1
+  [1m[36mShopkeeper Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "users" INNER JOIN "orders_shopkeepers" ON "users"."id" = "orders_shopkeepers"."shopkeeper_id" WHERE "users"."type" IN ('Shopkeeper') AND "orders_shopkeepers"."order_id" = 51 AND "users"."id" = 43 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (4.0ms)[0m  [1mDELETE FROM "carts_items" WHERE "carts_items"."cart_id" = 72 AND "carts_items"."item_id" IN (25, 32)[0m
+  [1m[35m (94.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/cart
+Completed 302 Found in 511ms (ActiveRecord: 300.0ms)
+
+
+Started GET "/cart" for 127.0.0.1 at 2013-03-17 18:43:57 -0400
+Processing by CartsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 44 LIMIT 1[0m
+  [1m[35mCart Load (1.0ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."shopper_id" = 44 LIMIT 1
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 72[0m
+  Rendered carts/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 32ms (Views: 22.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 18:43:57 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 18:43:57 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/saved" for 127.0.0.1 at 2013-03-17 18:44:00 -0400
+Processing by SavedsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 44 LIMIT 1
+  [1m[36mSaved Load (0.0ms)[0m  [1mSELECT "saveds".* FROM "saveds" WHERE "saveds"."shopper_id" = 44 LIMIT 1[0m
+  [1m[35mCart Load (1.0ms)[0m  SELECT "carts".* FROM "carts" WHERE "carts"."saved_id" = 3
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 92[0m
+  [1m[35mItem Load (1.0ms)[0m  SELECT "items".* FROM "items" INNER JOIN "items_saveds" ON "items"."id" = "items_saveds"."item_id" WHERE "items_saveds"."saved_id" = 3
+  [1m[36mCart Load (1.0ms)[0m  [1mSELECT "carts".* FROM "carts" WHERE "carts"."shopper_id" = 44 LIMIT 1[0m
+  [1m[35mItem Exists (1.0ms)[0m  SELECT 1 AS one FROM "items" INNER JOIN "carts_items" ON "items"."id" = "carts_items"."item_id" WHERE "carts_items"."cart_id" = 72 AND "items"."id" = 25 LIMIT 1
+  Rendered saveds/index.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 61ms (Views: 50.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-03-17 18:44:00 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-03-17 18:44:00 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
