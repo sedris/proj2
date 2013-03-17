@@ -22,6 +22,12 @@ SedrisProj2::Application.routes.draw do
   # Keep in mind you can assign values other than :controller and :action
   match 'add_to_cart' => 'items#add_to_cart'
   match 'remove_from_cart' => 'carts#remove_from_cart'
+  match 'saved' => 'saveds#index'
+  match 'add_item' => 'saveds#add_item'
+  match 'remove_item' => 'saveds#remove_item'
+  match 'add_cart' => 'saveds#add_cart'
+  match 'remove_cart' => 'saveds#remove_cart'
+  match 'saved/:cart_id' => 'saveds#cart'
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase

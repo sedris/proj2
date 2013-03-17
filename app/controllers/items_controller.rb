@@ -94,6 +94,7 @@ class ItemsController < ApplicationController
       current_user.cart = Cart.create()
     end
     current_user.cart.items.push(Item.find(params[:item]))
-    redirect_to items_path(shopkeeper_id: params[:shopkeeper_id])
+    #redirect_to items_path(shopkeeper_id: params[:shopkeeper_id])
+    redirect_to :back
   end
 end

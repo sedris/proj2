@@ -1,0 +1,65 @@
+<style>
+.table-no-border th, .table-no-border td { 
+     border-top: none; 
+ }
+</style>
+
+<h2>Saved Carts</h2>
+<table class="table">
+  <tr>
+    <th>Cart ID</th>
+    <th>Items</th>
+    <th></th>
+  </tr>
+
+<% @carts.each do |cart| %>
+  <tr>
+    <td><%= cart.id %></td>
+    <td>
+      <table class="table table-no-border">
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+        </tr>
+
+        <% cart.items.each do |item| %>
+        <tr>
+          <td><%= item.name %></td>
+          <td><%= item.description %></td>
+          <td><%= item.price %></td>
+        </tr>
+        <% end %>
+      </table>
+    </td>
+    <td><%=button_to "Remove from Saved", remove_cart_path(cart: cart.id), :class => "btn btn-small btn-danger"%></td>
+  </tr>
+<% end %>
+</table>
+
+<h2>Saved Items</h2>
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @items.each do |item| %>
+  <tr>
+    <td><%= item.name %></td>
+    <td><%= item.description %></td>
+    <td><%= item.price %></td>
+    <td><%=button_to "Remove from Saved", remove_item_path(item: item.id), :class => "btn btn-small btn-danger"%></td>
+    <% if !current_user.cart.items.include?(item) %>
+      <td><%=button_to "Add to Cart", add_to_cart_path(item: item.id), :class => "btn btn-small btn-primary"%></td>
+    <% else %>
+      <td><%=button_to "Remove from Cart", remove_from_cart_path(item: item.id), :class => "btn btn-small btn-danger"%></td>
+    <% end %>
+  </tr>
+<% end %>
+</table>
+
+<br />

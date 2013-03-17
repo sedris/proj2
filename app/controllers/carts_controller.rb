@@ -15,7 +15,7 @@ class CartsController < ApplicationController
   def remove_from_cart
   	item = current_user.cart.items.find(params[:item])
     current_user.cart.items.delete(item)
-    redirect_to cart_path
+    redirect_to :back
   end
 
 end

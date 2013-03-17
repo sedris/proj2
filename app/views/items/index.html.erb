@@ -11,6 +11,7 @@
     <th>Description</th>
     <th></th>
     <th></th>
+    <th></th>
   </tr>
 <% @items.each do |item| %>
   <tr>
@@ -20,17 +21,20 @@
 
     <% if current_user == @shopkeeper %>
       <td><%= button_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' }, :class => "btn btn-small btn-danger" %></td>
+    <% elsif !current_user.saved.items.include?(item) %>
+      <td><%=button_to "Save for Later", add_item_path(item: item.id), :class => "btn btn-small btn-primary"%></td>
     <% else %>
-      <td></td>
+      <td><%=button_to "Remove from Saved Items", remove_item_path(item: item.id), :class => "btn btn-small btn-danger"%></td>
     <% end %>
 
     <% if current_user == @shopkeeper %>
-    <td></td>
+      <td></td>
     <% elsif !current_user.cart.items.include?(item) %>
-    <td><%=button_to "Add to Cart", add_to_cart_path(item: item.id, shopkeeper_id: @shopkeeper.id), :class => "btn btn-small btn-primary"%></td>
+      <td><%=button_to "Add to Cart", add_to_cart_path(item: item.id), :class => "btn btn-small btn-primary"%></td>
     <% else %>
-        <td><%=button_to "Remove from Cart", remove_from_cart_path(item: item.id), :class => "btn btn-small btn-danger"%></td>
+      <td><%=button_to "Remove from Cart", remove_from_cart_path(item: item.id), :class => "btn btn-small btn-danger"%></td>
     <% end %>
+
   </tr>
 <% end %>
 </table>
