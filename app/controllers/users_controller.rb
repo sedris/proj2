@@ -6,17 +6,6 @@ class UsersController < ApplicationController
 		render :layout => "signup"
 	end
 
-	# GET /users
-	# GET /users.json
-	def index
-		@users = User.all
-
-		respond_to do |format|
-		  format.html # index.html.erb
-		  format.json { render json: @users }
-		end
-	end
-
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy

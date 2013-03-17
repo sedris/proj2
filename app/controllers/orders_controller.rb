@@ -6,8 +6,8 @@ class OrdersController < ApplicationController
 
 	# creates an order from a specified cart
 	def create
-		@cart = current_user.cart
-		@order = current_user.cart.orders.create()
+		@cart = Cart.find(params[:cart])
+		@order = @cart.orders.create()
 		if @order.save
 			@cart.items.each do |item|
 				# add items and respective shopkeepers to order
@@ -19,7 +19,7 @@ class OrdersController < ApplicationController
 			end 
 
 			# empty the cart
-			current_user.cart.items = []
+			@cart.items = []
 			redirect_to :back, :notice => "Checkout complete. Go to 'Orders' to view."
 		else
 			redirect_to :back, :flash => { :alert =>  "Checkout not completed: Cart cannot be empty" }

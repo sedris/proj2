@@ -10,6 +10,7 @@
     <th>Cart ID</th>
     <th>Items</th>
     <th></th>
+    <th></th>
   </tr>
 
 <% @carts.each do |cart| %>
@@ -33,6 +34,7 @@
       </table>
     </td>
     <td><%=button_to "Remove from Saved", remove_cart_path(cart: cart.id), :class => "btn btn-small btn-danger"%></td>
+    <td><%=button_to "Checkout", orders_path(cart: cart.id), :class => "btn btn-small btn-primary", :disable_with => "Please wait..."%></td>
   </tr>
 <% end %>
 </table>

@@ -1,6 +1,17 @@
 class ShopkeepersController < ApplicationController
 	skip_before_filter :authenticate, :only => [:new, :create]
 
+	# GET /shopkeepers
+	# GET /shopkeepers.json
+	def index
+		@shopkeepers = Shopkeeper.all
+
+		respond_to do |format|
+		  format.html # index.html.erb
+		  format.json { render json: @shopkeepers }
+		end
+	end
+
 	def new
 		@user = Shopkeeper.new
 	end
