@@ -3,7 +3,6 @@
   <tr>
     <th>ID</th>
     <th>Date</th>
-    <th>Shopper</th>
     <th>From Shopkeepers</th>
     <th></th>
   </tr>
@@ -12,7 +11,6 @@
   <tr>
     <td><%= order.id %></td>
     <td><%= order.created_at %></td>
-    <td><%= order.cart.shopper.username %></td>
     <td><% order.shopkeepers.each do |shopkeeper|%><%=shopkeeper.username + " " %><%end%></td>
     <td><%= link_to 'View Order', order %></td>
   </tr>
@@ -36,7 +34,11 @@
     <tr>
       <td><%= order.id %></td>
       <td><%= order.created_at %></td>
-      <td><%= order.cart.shopper.username %></td>
+      <% if order.cart.shopper %>
+        <td><%= order.cart.shopper.username%></td>
+      <% else %>
+        <td><$= order.cart.saved.shopper.username %></td>
+      <% end %>
       <td><% order.items.each do |item|%><%=item.name + " " %><%end%></td>
       <td><%= link_to 'View Order', order %></td>
     </tr>

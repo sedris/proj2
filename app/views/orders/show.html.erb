@@ -1,6 +1,10 @@
 <p>
   <b>Order by:</b>
-  <%= @order.cart.shopper.username %>
+  <% if @order.cart.shopper %>
+    <%= @order.cart.shopper.username%>
+  <% else %>
+    <%= @order.cart.saved.shopper.username %>
+  <% end %>
   on <%= @order.created_at %>
 </p>
 

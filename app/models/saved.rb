@@ -11,4 +11,14 @@ class Saved < ActiveRecord::Base
   		self.carts.push(cart)
   	end
   end
+
+  def get_unpurchased_carts
+    carts = []
+    self.carts.each do |cart|
+      if !cart.items.empty?
+        carts.push(cart)
+      end
+    end
+    return carts
+  end
 end

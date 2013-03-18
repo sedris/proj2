@@ -3,7 +3,7 @@ class SavedsController < ApplicationController
 	def index
 		saved = current_user.saved
 		@items = saved.items
-		@carts = saved.carts
+		@carts = saved.get_unpurchased_carts
 		#redirect to saved_cart_url(:cart_id => cart_id)
 	end
 
@@ -34,14 +34,14 @@ class SavedsController < ApplicationController
 
 	# remove item from saved items
 	def remove_item
-		saved = current_user.saved
-		item = saved.items.find(params[:item])
+	saved = current_user.saved
+	item = saved.items.find(params[:item])
     saved.items.delete(item)
     redirect_to :back
 	end
 
 	# remove cart from saved items and delete it
-	def remove_cart
+	def remove_carts
 		cart = current_user.saved.carts.find(params[:cart])
     #saved.carts.delete(cart)
     cart.destroy

@@ -1,6 +1,14 @@
 class OrdersController < ApplicationController
 	def index
-		@orders = current_user.cart.orders
+		@orders = []
+		current_user.cart.orders.each do |order|
+			@orders.push(order)
+		end
+		current_user.saved.carts.each do |cart|
+			cart.orders.each do |order|
+				@orders.push(order)
+			end
+		end
 		#@shopkeeper = Shopkeeper.find_by_id(session[:user_id])
 	end
 
@@ -20,7 +28,7 @@ class OrdersController < ApplicationController
 
 			# empty the cart
 			@cart.items = []
-			redirect_to :back, :notice => "Checkout complete. Go to 'Orders' to view."
+			redirect_to :back, :flash => { :alert =>  "Checkout complete. Go to 'Orders' to view."}
 		else
 			redirect_to :back, :flash => { :alert =>  "Checkout not completed: Cart cannot be empty" }
 		end
