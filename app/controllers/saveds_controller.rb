@@ -41,7 +41,7 @@ class SavedsController < ApplicationController
 	end
 
 	# remove cart from saved items and delete it
-	def remove_carts
+	def remove_cart
 		cart = current_user.saved.carts.find(params[:cart])
     #saved.carts.delete(cart)
     cart.destroy

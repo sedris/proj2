@@ -29,15 +29,15 @@
     </tr>
 
   <% current_user.get_store_orders().each do |order| %>
-  <!-- Only display orders with Carts and Shoppers that still exist -->
-  <% if order.cart && order.cart.shopper %>
+  <!-- Only display orders with Carts that still exist -->
+  <% if order.cart %>
     <tr>
       <td><%= order.id %></td>
       <td><%= order.created_at %></td>
       <% if order.cart.shopper %>
         <td><%= order.cart.shopper.username%></td>
       <% else %>
-        <td><$= order.cart.saved.shopper.username %></td>
+        <td><%= order.cart.saved.shopper.username %></td>
       <% end %>
       <td><% order.items.each do |item|%><%=item.name + " " %><%end%></td>
       <td><%= link_to 'View Order', order %></td>
