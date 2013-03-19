@@ -1,0 +1,48 @@
+<h2>Orders You Have Made</h2>
+<table class="table">
+  <tr>
+    <th>ID</th>
+    <th>Date</th>
+    <th>From Shopkeepers</th>
+    <th></th>
+  </tr>
+
+<% @orders.each do |order| %>
+  <tr>
+    <td><%= order.id %></td>
+    <td><%= order.created_at %></td>
+    <td><% order.shopkeepers.each do |shopkeeper|%><%=shopkeeper.username + " " %><%end%></td>
+    <td><%= link_to 'View Order', order %></td>
+  </tr>
+<% end %>
+</table>
+<br><br>
+<% if current_user.is_a?(Shopkeeper) %>
+  <h2>All Orders for Your Store</h2>
+  <table class="table">
+    <tr>
+      <th>Order ID</th>
+      <th>Date</th>
+      <th>Shopper</th>
+      <th>Items</th>
+      <th></th>
+    </tr>
+
+  <% current_user.get_store_orders().each do |order| %>
+  <!-- Only display orders with Carts that still exist -->
+  <% if order.cart %>
+    <tr>
+      <td><%= order.id %></td>
+      <td><%= order.created_at %></td>
+      <% if order.cart.shopper %>
+        <td><%= order.cart.shopper.username%></td>
+      <% else %>
+        <td><%= order.cart.saved.shopper.username %></td>
+      <% end %>
+      <td><% order.items.each do |item|%><%=item.name + " " %><%end%></td>
+      <td><%= link_to 'View Order', order %></td>
+    </tr>
+    <% end %>
+  <% end %>
+<% end %>
+</table>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shopping Cart</title>
+  <%= stylesheet_link_tag    "bootstrap.min", :media => "all" %>
+  <%= javascript_include_tag "bootstrap.min" %>
+  <%= javascript_include_tag "http://code.jquery.com/jquery.js" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="container">
+<div class="navbar">
+  <div class="navbar-inner">
+    <ul class="nav">
+      <a class="brand" href="#">ShoppingCart</a>
+      <li><a href="/">Home</a></li>
+      <li><a href="/cart">Cart</a></li>
+      <li><a href="/orders">Orders</a></li>
+      <% if current_user.is_a?(Shopkeeper) %>
+        <li><a href="/items"> Your Items</a></li>
+      <% end %>
+      <li><a href="/saved">Saved Items/Carts</a></li>
+    </ul>
+    <ul class="nav pull-right">
+      <% if current_user %>
+        <li><%= link_to "Log out", logout_path %></li>
+        <li><a href="#">Logged in as <b><%= current_user.username %></b></a></li>
+      <% else %>
+        <li><%= link_to "Sign up", signup_path %></li> 
+        <li><%= link_to "Log in", login_path %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+  
+  <% if !flash.empty? %>
+    <% flash.each do |name, msg| %>
+      <%= content_tag :div, msg, :id => "flash#{name}", :class => "text-warning" %>
+    <% end %>
+  <% end %>
+
+
+  <%= yield %>
+</div>
+</body>
+</html>
